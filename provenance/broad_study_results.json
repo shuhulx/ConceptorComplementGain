@@ -1,0 +1,2682 @@
+{
+  "Qwen2.5-1.5B": {
+    "results": {
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_short": "Qwen2.5-1.5B-Instruct",
+      "num_layers": 28,
+      "hidden_size": 1536,
+      "third_layer": 9,
+      "chen_layer": 14,
+      "analysis_layers": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        9,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26
+      ],
+      "config": {
+        "SEED": 42,
+        "APERTURE": 0.05,
+        "BETA_CONCEPTOR": 2.0,
+        "BETA_ADDITIVE": 2.3,
+        "NUM_ICL_PROMPTS": 100,
+        "NUM_ICL_EXAMPLES": 10,
+        "N_TEST_PROMPTS": 50,
+        "N_SEEDS": 3,
+        "N_INSTRUCTION_PAIRS": 5,
+        "N_EXTRACTION_QUESTIONS": 20,
+        "N_SAMPLES": 40,
+        "MAX_NEW_TOKENS": 200,
+        "BETAS_CONCEPTOR": [
+          0.5,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0
+        ],
+        "APERTURES_SEMANTIC": [
+          0.001,
+          0.0125,
+          0.05,
+          0.1
+        ],
+        "APERTURES_SWEEP": [
+          0.001,
+          0.005,
+          0.0125,
+          0.025,
+          0.05,
+          0.1,
+          0.5,
+          1.0,
+          5.0
+        ],
+        "JUDGE_MODEL": "gemini-2.5-flash",
+        "FAST_MODE": false
+      },
+      "extraction": {
+        "semantic_N": 100,
+        "persona_N": 100,
+        "total_checks": 300,
+        "all_verified": true,
+        "no_nan": true
+      },
+      "spectral": {
+        "antonym": {
+          "raw_peak": 26,
+          "rawCCR": 0.0104,
+          "norm_peak": 24,
+          "nCCR": 4.89e-07,
+          "EffRank": 32.5
+        },
+        "country_capital": {
+          "raw_peak": 26,
+          "rawCCR": 0.0129,
+          "norm_peak": 26,
+          "nCCR": 9.18e-07,
+          "EffRank": 31.4
+        },
+        "present_past": {
+          "raw_peak": 26,
+          "rawCCR": 0.00723,
+          "norm_peak": 24,
+          "nCCR": 2.57e-07,
+          "EffRank": 30.0
+        },
+        "english_french": {
+          "raw_peak": 26,
+          "rawCCR": 0.0132,
+          "norm_peak": 26,
+          "nCCR": 6.53e-07,
+          "EffRank": 33.4
+        },
+        "singular_plural": {
+          "raw_peak": 26,
+          "rawCCR": 0.0106,
+          "norm_peak": 26,
+          "nCCR": 4.83e-07,
+          "EffRank": 30.6
+        },
+        "capitalize": {
+          "raw_peak": 26,
+          "rawCCR": 0.00861,
+          "norm_peak": 24,
+          "nCCR": 3.82e-07,
+          "EffRank": 32.2
+        },
+        "sycophancy": {
+          "raw_peak": 26,
+          "rawCCR": 0.0033,
+          "norm_peak": 0,
+          "nCCR": 3.62e-07,
+          "EffRank": 24.6
+        },
+        "hallucination": {
+          "raw_peak": 26,
+          "rawCCR": 0.00423,
+          "norm_peak": 0,
+          "nCCR": 4.62e-07,
+          "EffRank": 24.7
+        },
+        "evil": {
+          "raw_peak": 26,
+          "rawCCR": 0.00251,
+          "norm_peak": 10,
+          "nCCR": 2.95e-07,
+          "EffRank": 15.1
+        },
+        "impolite": {
+          "raw_peak": 26,
+          "rawCCR": 0.00538,
+          "norm_peak": 22,
+          "nCCR": 3.72e-07,
+          "EffRank": 29.4
+        },
+        "optimistic": {
+          "raw_peak": 26,
+          "rawCCR": 0.0027,
+          "norm_peak": 0,
+          "nCCR": 3.57e-07,
+          "EffRank": 19.8
+        },
+        "apathetic": {
+          "raw_peak": 26,
+          "rawCCR": 0.00307,
+          "norm_peak": 0,
+          "nCCR": 3.08e-07,
+          "EffRank": 22.6
+        },
+        "humorous": {
+          "raw_peak": 26,
+          "rawCCR": 0.00367,
+          "norm_peak": 0,
+          "nCCR": 3.69e-07,
+          "EffRank": 34.0
+        }
+      },
+      "spectral_summary": {
+        "raw_CCR_semantic": 0.0105,
+        "raw_CCR_persona": 0.00355,
+        "raw_ratio": 2.95,
+        "norm_CCR_semantic": 5.3e-07,
+        "norm_CCR_persona": 3.61e-07,
+        "norm_ratio": 1.47,
+        "avg_EffRank_semantic": 31.7,
+        "avg_EffRank_persona": 24.3
+      },
+      "mann_whitney": {
+        "test": "Semantic nCCR > Persona nCCR (one-sided)",
+        "U": 34.0,
+        "p": 0.0367,
+        "significant": true,
+        "cohens_d": 1.15,
+        "sem_values": [
+          4.89e-07,
+          9.18e-07,
+          2.57e-07,
+          6.53e-07,
+          4.83e-07,
+          3.82e-07
+        ],
+        "per_values": [
+          3.62e-07,
+          4.62e-07,
+          2.95e-07,
+          3.72e-07,
+          3.57e-07,
+          3.08e-07,
+          3.69e-07
+        ]
+      },
+      "aperture_sweep": {
+        "antonym": {
+          "0.001": {
+            "CCR": 0.0,
+            "EffRank": 19.1
+          },
+          "0.005": {
+            "CCR": 0.0002,
+            "EffRank": 19.4
+          },
+          "0.0125": {
+            "CCR": 0.0014,
+            "EffRank": 20.8
+          },
+          "0.025": {
+            "CCR": 0.0044,
+            "EffRank": 24.6
+          },
+          "0.05": {
+            "CCR": 0.0104,
+            "EffRank": 32.5
+          },
+          "0.1": {
+            "CCR": 0.0189,
+            "EffRank": 46.5
+          },
+          "0.5": {
+            "CCR": 0.0497,
+            "EffRank": 93.8
+          },
+          "1.0": {
+            "CCR": 0.0592,
+            "EffRank": 98.4
+          },
+          "5.0": {
+            "CCR": 0.0642,
+            "EffRank": 99.0
+          }
+        },
+        "sycophancy": {
+          "0.001": {
+            "CCR": 0.0,
+            "EffRank": 17.7
+          },
+          "0.005": {
+            "CCR": 0.0,
+            "EffRank": 17.8
+          },
+          "0.0125": {
+            "CCR": 0.0003,
+            "EffRank": 18.2
+          },
+          "0.025": {
+            "CCR": 0.001,
+            "EffRank": 19.8
+          },
+          "0.05": {
+            "CCR": 0.0033,
+            "EffRank": 24.6
+          },
+          "0.1": {
+            "CCR": 0.0088,
+            "EffRank": 35.6
+          },
+          "0.5": {
+            "CCR": 0.0389,
+            "EffRank": 86.2
+          },
+          "1.0": {
+            "CCR": 0.0534,
+            "EffRank": 96.6
+          },
+          "5.0": {
+            "CCR": 0.0638,
+            "EffRank": 99.0
+          }
+        }
+      },
+      "theory": {
+        "antonym": {
+          "rawCCR": 0.0104,
+          "SPR": 0.00507,
+          "SCR": 0.4895,
+          "nCCR": 4.89e-07,
+          "EffRank": 32.5
+        },
+        "country_capital": {
+          "rawCCR": 0.0129,
+          "SPR": 0.00819,
+          "SCR": 0.6333,
+          "nCCR": 9.18e-07,
+          "EffRank": 31.4
+        },
+        "present_past": {
+          "rawCCR": 0.00723,
+          "SPR": 0.00268,
+          "SCR": 0.3705,
+          "nCCR": 2.57e-07,
+          "EffRank": 30.0
+        },
+        "english_french": {
+          "rawCCR": 0.0132,
+          "SPR": 0.00805,
+          "SCR": 0.6084,
+          "nCCR": 6.53e-07,
+          "EffRank": 33.4
+        },
+        "singular_plural": {
+          "rawCCR": 0.0106,
+          "SPR": 0.00566,
+          "SCR": 0.5331,
+          "nCCR": 4.83e-07,
+          "EffRank": 30.6
+        },
+        "capitalize": {
+          "rawCCR": 0.00861,
+          "SPR": 0.00354,
+          "SCR": 0.411,
+          "nCCR": 3.82e-07,
+          "EffRank": 32.2
+        },
+        "sycophancy": {
+          "rawCCR": 0.0033,
+          "SPR": 0.000681,
+          "SCR": 0.2064,
+          "nCCR": 3.62e-07,
+          "EffRank": 24.6
+        },
+        "hallucination": {
+          "rawCCR": 0.00423,
+          "SPR": 0.00111,
+          "SCR": 0.2628,
+          "nCCR": 4.62e-07,
+          "EffRank": 24.7
+        },
+        "evil": {
+          "rawCCR": 0.00251,
+          "SPR": 0.000641,
+          "SCR": 0.2552,
+          "nCCR": 2.95e-07,
+          "EffRank": 15.1
+        },
+        "impolite": {
+          "rawCCR": 0.00538,
+          "SPR": 0.00151,
+          "SCR": 0.2806,
+          "nCCR": 3.72e-07,
+          "EffRank": 29.4
+        },
+        "optimistic": {
+          "rawCCR": 0.0027,
+          "SPR": 0.000565,
+          "SCR": 0.2094,
+          "nCCR": 3.57e-07,
+          "EffRank": 19.8
+        },
+        "apathetic": {
+          "rawCCR": 0.00307,
+          "SPR": 0.000638,
+          "SCR": 0.2081,
+          "nCCR": 3.08e-07,
+          "EffRank": 22.6
+        },
+        "humorous": {
+          "rawCCR": 0.00367,
+          "SPR": 0.000609,
+          "SCR": 0.1657,
+          "nCCR": 3.69e-07,
+          "EffRank": 34.0
+        }
+      },
+      "norm_depths": {
+        "antonym": {
+          "norm_peak": 24,
+          "depth_pct": 86
+        },
+        "country_capital": {
+          "norm_peak": 26,
+          "depth_pct": 93
+        },
+        "present_past": {
+          "norm_peak": 24,
+          "depth_pct": 86
+        },
+        "english_french": {
+          "norm_peak": 26,
+          "depth_pct": 93
+        },
+        "singular_plural": {
+          "norm_peak": 26,
+          "depth_pct": 93
+        },
+        "capitalize": {
+          "norm_peak": 24,
+          "depth_pct": 86
+        },
+        "sycophancy": {
+          "norm_peak": 0,
+          "depth_pct": 0
+        },
+        "hallucination": {
+          "norm_peak": 0,
+          "depth_pct": 0
+        },
+        "evil": {
+          "norm_peak": 10,
+          "depth_pct": 36
+        },
+        "impolite": {
+          "norm_peak": 22,
+          "depth_pct": 79
+        },
+        "optimistic": {
+          "norm_peak": 0,
+          "depth_pct": 0
+        },
+        "apathetic": {
+          "norm_peak": 0,
+          "depth_pct": 0
+        },
+        "humorous": {
+          "norm_peak": 0,
+          "depth_pct": 0
+        }
+      },
+      "persona_norms": {
+        "sycophancy": {
+          "L9": 3.2,
+          "L14": 4.8
+        },
+        "hallucination": {
+          "L9": 5.1,
+          "L14": 7.4
+        },
+        "evil": {
+          "L9": 5.8,
+          "L14": 7.7
+        },
+        "impolite": {
+          "L9": 2.2,
+          "L14": 3.3
+        },
+        "optimistic": {
+          "L9": 2.6,
+          "L14": 3.5
+        },
+        "apathetic": {
+          "L9": 1.9,
+          "L14": 2.8
+        },
+        "humorous": {
+          "L9": 7.7,
+          "L14": 10.6
+        }
+      },
+      "semantic_results": {
+        "antonym": {
+          "baseline_mean": 0.0,
+          "baseline_std": 0.0,
+          "conceptor_mean": 0.5,
+          "conceptor_std": 0.0,
+          "additive_mean": 0.156,
+          "additive_std": 0.0,
+          "best_config": {
+            "layer": 18,
+            "beta": 3.0,
+            "aperture": 0.0125
+          }
+        },
+        "country_capital": {
+          "baseline_mean": 0.0,
+          "baseline_std": 0.0,
+          "conceptor_mean": 0.469,
+          "conceptor_std": 0.0,
+          "additive_mean": 0.042,
+          "additive_std": 0.015,
+          "best_config": {
+            "layer": 18,
+            "beta": 3.0,
+            "aperture": 0.0125
+          }
+        },
+        "present_past": {
+          "baseline_mean": 0.031,
+          "baseline_std": 0.0,
+          "conceptor_mean": 0.969,
+          "conceptor_std": 0.0,
+          "additive_mean": 0.948,
+          "additive_std": 0.015,
+          "best_config": {
+            "layer": 14,
+            "beta": 5.0,
+            "aperture": 0.0125
+          }
+        },
+        "english_french": {
+          "baseline_mean": 0.0,
+          "baseline_std": 0.0,
+          "conceptor_mean": 0.292,
+          "conceptor_std": 0.029,
+          "additive_mean": 0.188,
+          "additive_std": 0.0,
+          "best_config": {
+            "layer": 18,
+            "beta": 1.0,
+            "aperture": 0.1
+          }
+        },
+        "singular_plural": {
+          "baseline_mean": 0.094,
+          "baseline_std": 0.0,
+          "conceptor_mean": 0.75,
+          "conceptor_std": 0.0,
+          "additive_mean": 0.625,
+          "additive_std": 0.0,
+          "best_config": {
+            "layer": 18,
+            "beta": 1.0,
+            "aperture": 0.05
+          }
+        },
+        "capitalize": {
+          "baseline_mean": 0.031,
+          "baseline_std": 0.0,
+          "conceptor_mean": 0.698,
+          "conceptor_std": 0.015,
+          "additive_mean": 0.594,
+          "additive_std": 0.0,
+          "best_config": {
+            "layer": 16,
+            "beta": 3.0,
+            "aperture": 0.0125
+          }
+        }
+      },
+      "persona_table": {
+        "sycophancy": {
+          "baseline": {
+            "trait": 14.2,
+            "coherence": 89.2
+          },
+          "additive_L14_coef1.5": {
+            "trait": 18.0,
+            "coherence": 93.2
+          },
+          "additive_L14_coef3.0": {
+            "trait": 19.0,
+            "coherence": 86.8
+          },
+          "conceptor_suppress_L9_b2.0": {
+            "trait": 56.8,
+            "coherence": 85.6
+          },
+          "conceptor_suppress_L9_b3.9": {
+            "trait": 27.0,
+            "coherence": 8.0
+          },
+          "conceptor_enhance_L9_b1.0": {
+            "trait": 0.0,
+            "coherence": 0.0
+          },
+          "conceptor_enhance_L9_b2.0": {
+            "trait": 0.0,
+            "coherence": 0.0
+          },
+          "additive_L9_coef1.5": {
+            "trait": 19.5,
+            "coherence": 92.4
+          }
+        },
+        "hallucination": {
+          "baseline": {
+            "trait": 15.0,
+            "coherence": 73.2
+          },
+          "additive_L14_coef1.5": {
+            "trait": 10.0,
+            "coherence": 91.6
+          },
+          "additive_L14_coef3.0": {
+            "trait": 15.0,
+            "coherence": 89.4
+          },
+          "conceptor_suppress_L9_b2.0": {
+            "trait": 79.5,
+            "coherence": 82.0
+          },
+          "conceptor_suppress_L9_b3.9": {
+            "trait": 97.5,
+            "coherence": 9.2
+          },
+          "conceptor_enhance_L9_b1.0": {
+            "trait": 77.5,
+            "coherence": 0.0
+          },
+          "conceptor_enhance_L9_b2.0": {
+            "trait": 100.0,
+            "coherence": 0.0
+          },
+          "additive_L9_coef1.5": {
+            "trait": 20.0,
+            "coherence": 82.5
+          }
+        },
+        "evil": {
+          "baseline": {
+            "trait": 0.0,
+            "coherence": 91.2
+          },
+          "additive_L14_coef1.5": {
+            "trait": 0.0,
+            "coherence": 80.5
+          },
+          "additive_L14_coef3.0": {
+            "trait": 0.0,
+            "coherence": 73.6
+          },
+          "conceptor_suppress_L9_b2.0": {
+            "trait": 0.0,
+            "coherence": 81.2
+          },
+          "conceptor_suppress_L9_b3.9": {
+            "trait": 3.2,
+            "coherence": 24.4
+          },
+          "conceptor_enhance_L9_b1.0": {
+            "trait": 0.0,
+            "coherence": 0.0
+          },
+          "conceptor_enhance_L9_b2.0": {
+            "trait": 0.0,
+            "coherence": 0.0
+          },
+          "additive_L9_coef1.5": {
+            "trait": 0.0,
+            "coherence": 89.1
+          }
+        },
+        "impolite": {
+          "baseline": {
+            "trait": 0.0,
+            "coherence": 85.2
+          },
+          "additive_L14_coef1.5": {
+            "trait": 0.0,
+            "coherence": 87.0
+          },
+          "additive_L14_coef3.0": {
+            "trait": 0.0,
+            "coherence": 80.2
+          },
+          "conceptor_suppress_L9_b2.0": {
+            "trait": 0.0,
+            "coherence": 70.5
+          },
+          "conceptor_suppress_L9_b3.9": {
+            "trait": 8.0,
+            "coherence": 14.1
+          },
+          "conceptor_enhance_L9_b1.0": {
+            "trait": 77.5,
+            "coherence": 0.0
+          },
+          "conceptor_enhance_L9_b2.0": {
+            "trait": 62.5,
+            "coherence": 0.0
+          },
+          "additive_L9_coef1.5": {
+            "trait": 0.0,
+            "coherence": 82.4
+          }
+        },
+        "optimistic": {
+          "baseline": {
+            "trait": 40.2,
+            "coherence": 92.4
+          },
+          "additive_L14_coef1.5": {
+            "trait": 27.5,
+            "coherence": 92.2
+          },
+          "additive_L14_coef3.0": {
+            "trait": 12.8,
+            "coherence": 91.6
+          },
+          "conceptor_suppress_L9_b2.0": {
+            "trait": 39.0,
+            "coherence": 90.4
+          },
+          "conceptor_suppress_L9_b3.9": {
+            "trait": 8.2,
+            "coherence": 16.2
+          },
+          "conceptor_enhance_L9_b1.0": {
+            "trait": 0.0,
+            "coherence": 0.0
+          },
+          "conceptor_enhance_L9_b2.0": {
+            "trait": 0.0,
+            "coherence": 0.0
+          },
+          "additive_L9_coef1.5": {
+            "trait": 30.8,
+            "coherence": 92.8
+          }
+        },
+        "apathetic": {
+          "baseline": {
+            "trait": 8.2,
+            "coherence": 92.1
+          },
+          "additive_L14_coef1.5": {
+            "trait": 5.0,
+            "coherence": 88.2
+          },
+          "additive_L14_coef3.0": {
+            "trait": 0.5,
+            "coherence": 87.8
+          },
+          "conceptor_suppress_L9_b2.0": {
+            "trait": 47.2,
+            "coherence": 81.5
+          },
+          "conceptor_suppress_L9_b3.9": {
+            "trait": 94.2,
+            "coherence": 10.8
+          },
+          "conceptor_enhance_L9_b1.0": {
+            "trait": 100.0,
+            "coherence": 0.0
+          },
+          "conceptor_enhance_L9_b2.0": {
+            "trait": 97.5,
+            "coherence": 0.0
+          },
+          "additive_L9_coef1.5": {
+            "trait": 1.8,
+            "coherence": 90.2
+          }
+        },
+        "humorous": {
+          "baseline": {
+            "trait": 0.0,
+            "coherence": 87.6
+          },
+          "additive_L14_coef1.5": {
+            "trait": 0.0,
+            "coherence": 85.9
+          },
+          "additive_L14_coef3.0": {
+            "trait": 0.0,
+            "coherence": 74.6
+          },
+          "conceptor_suppress_L9_b2.0": {
+            "trait": 0.0,
+            "coherence": 81.8
+          },
+          "conceptor_suppress_L9_b3.9": {
+            "trait": 0.0,
+            "coherence": 13.0
+          },
+          "conceptor_enhance_L9_b1.0": {
+            "trait": 0.0,
+            "coherence": 0.0
+          },
+          "conceptor_enhance_L9_b2.0": {
+            "trait": 0.0,
+            "coherence": 0.0
+          },
+          "additive_L9_coef1.5": {
+            "trait": 0.0,
+            "coherence": 84.2
+          }
+        }
+      },
+      "correlation": {
+        "category_separation": {
+          "sem_mean_nCCR": 5.3e-07,
+          "per_mean_nCCR": 3.61e-07,
+          "ratio": 1.47,
+          "MW_U": 34.0,
+          "MW_p": 0.0367,
+          "significant": true,
+          "cohens_d": 1.15
+        },
+        "per_concept": [
+          {
+            "name": "country_capital",
+            "type": "semantic",
+            "nCCR": 9.18e-07,
+            "rawCCR": 0.0129,
+            "acc": 0.469
+          },
+          {
+            "name": "english_french",
+            "type": "semantic",
+            "nCCR": 6.53e-07,
+            "rawCCR": 0.0132,
+            "acc": 0.292
+          },
+          {
+            "name": "antonym",
+            "type": "semantic",
+            "nCCR": 4.89e-07,
+            "rawCCR": 0.0104,
+            "acc": 0.5
+          },
+          {
+            "name": "singular_plural",
+            "type": "semantic",
+            "nCCR": 4.83e-07,
+            "rawCCR": 0.0106,
+            "acc": 0.75
+          },
+          {
+            "name": "hallucination",
+            "type": "persona",
+            "nCCR": 4.62e-07,
+            "rawCCR": 0.00423,
+            "acc": 0.0
+          },
+          {
+            "name": "capitalize",
+            "type": "semantic",
+            "nCCR": 3.82e-07,
+            "rawCCR": 0.00861,
+            "acc": 0.698
+          },
+          {
+            "name": "impolite",
+            "type": "persona",
+            "nCCR": 3.72e-07,
+            "rawCCR": 0.00538,
+            "acc": 0.0
+          },
+          {
+            "name": "humorous",
+            "type": "persona",
+            "nCCR": 3.69e-07,
+            "rawCCR": 0.00367,
+            "acc": 0.0
+          },
+          {
+            "name": "sycophancy",
+            "type": "persona",
+            "nCCR": 3.62e-07,
+            "rawCCR": 0.0033,
+            "acc": 0.0
+          },
+          {
+            "name": "optimistic",
+            "type": "persona",
+            "nCCR": 3.57e-07,
+            "rawCCR": 0.0027,
+            "acc": 0.0
+          },
+          {
+            "name": "apathetic",
+            "type": "persona",
+            "nCCR": 3.08e-07,
+            "rawCCR": 0.00307,
+            "acc": 0.0
+          },
+          {
+            "name": "evil",
+            "type": "persona",
+            "nCCR": 2.95e-07,
+            "rawCCR": 0.00251,
+            "acc": 0.0
+          },
+          {
+            "name": "present_past",
+            "type": "semantic",
+            "nCCR": 2.57e-07,
+            "rawCCR": 0.00723,
+            "acc": 0.969
+          }
+        ],
+        "note": "These measurements describe category differences and the association between nCCR and semantic-task accuracy in the evaluated sample. Predictive performance was not evaluated."
+      },
+      "judge_stats": {
+        "total": 4481,
+        "ok": 4481,
+        "blocked": 0,
+        "errors": 0,
+        "model": "gemini-2.5-flash",
+        "total_scored": 2240
+      }
+    }
+  },
+  "Qwen2.5-7B": {
+    "results": {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "model_short": "Qwen2.5-7B-Instruct",
+      "num_layers": 28,
+      "hidden_size": 3584,
+      "third_layer": 9,
+      "chen_layer": 19,
+      "analysis_layers": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        9,
+        10,
+        12,
+        14,
+        16,
+        18,
+        19,
+        20,
+        22,
+        24,
+        26
+      ],
+      "config": {
+        "SEED": 42,
+        "APERTURE": 0.05,
+        "BETA_CONCEPTOR": 2.0,
+        "BETA_ADDITIVE": 2.3,
+        "NUM_ICL_PROMPTS": 100,
+        "NUM_ICL_EXAMPLES": 10,
+        "N_TEST_PROMPTS": 50,
+        "N_SEEDS": 3,
+        "N_INSTRUCTION_PAIRS": 5,
+        "N_EXTRACTION_QUESTIONS": 20,
+        "N_SAMPLES": 40,
+        "MAX_NEW_TOKENS": 200,
+        "BETAS_CONCEPTOR": [
+          0.5,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0
+        ],
+        "APERTURES_SEMANTIC": [
+          0.001,
+          0.0125,
+          0.05,
+          0.1
+        ],
+        "APERTURES_SWEEP": [
+          0.001,
+          0.005,
+          0.0125,
+          0.025,
+          0.05,
+          0.1,
+          0.5,
+          1.0,
+          5.0
+        ],
+        "JUDGE_MODEL": "gemini-2.5-flash",
+        "FAST_MODE": false,
+        "CHEN_BEST_LAYERS": {
+          "default": 19,
+          "hallucination": 15
+        }
+      },
+      "extraction": {
+        "semantic_N": 100,
+        "persona_N": 100,
+        "total_checks": 320,
+        "all_verified": true,
+        "no_nan": true
+      },
+      "spectral": {
+        "antonym": {
+          "raw_peak": 26,
+          "rawCCR": 0.00757,
+          "norm_peak": 26,
+          "nCCR": 2.4e-07,
+          "EffRank": 45.6
+        },
+        "country_capital": {
+          "raw_peak": 26,
+          "rawCCR": 0.00758,
+          "norm_peak": 26,
+          "nCCR": 4.01e-07,
+          "EffRank": 38.0
+        },
+        "present_past": {
+          "raw_peak": 26,
+          "rawCCR": 0.00712,
+          "norm_peak": 24,
+          "nCCR": 1.92e-07,
+          "EffRank": 46.7
+        },
+        "english_french": {
+          "raw_peak": 26,
+          "rawCCR": 0.00862,
+          "norm_peak": 26,
+          "nCCR": 3.38e-07,
+          "EffRank": 45.5
+        },
+        "singular_plural": {
+          "raw_peak": 26,
+          "rawCCR": 0.00754,
+          "norm_peak": 26,
+          "nCCR": 2.56e-07,
+          "EffRank": 44.2
+        },
+        "capitalize": {
+          "raw_peak": 26,
+          "rawCCR": 0.00811,
+          "norm_peak": 24,
+          "nCCR": 2.48e-07,
+          "EffRank": 51.4
+        },
+        "sycophancy": {
+          "raw_peak": 26,
+          "rawCCR": 0.00295,
+          "norm_peak": 22,
+          "nCCR": 1.16e-07,
+          "EffRank": 30.7
+        },
+        "hallucination": {
+          "raw_peak": 26,
+          "rawCCR": 0.00363,
+          "norm_peak": 14,
+          "nCCR": 1.54e-07,
+          "EffRank": 33.3
+        },
+        "evil": {
+          "raw_peak": 26,
+          "rawCCR": 0.00294,
+          "norm_peak": 14,
+          "nCCR": 1.17e-07,
+          "EffRank": 36.5
+        },
+        "impolite": {
+          "raw_peak": 26,
+          "rawCCR": 0.00451,
+          "norm_peak": 22,
+          "nCCR": 2.37e-07,
+          "EffRank": 42.6
+        },
+        "optimistic": {
+          "raw_peak": 26,
+          "rawCCR": 0.00272,
+          "norm_peak": 14,
+          "nCCR": 1.22e-07,
+          "EffRank": 29.4
+        },
+        "apathetic": {
+          "raw_peak": 26,
+          "rawCCR": 0.00345,
+          "norm_peak": 22,
+          "nCCR": 1.55e-07,
+          "EffRank": 34.2
+        },
+        "humorous": {
+          "raw_peak": 26,
+          "rawCCR": 0.00341,
+          "norm_peak": 14,
+          "nCCR": 1.34e-07,
+          "EffRank": 44.6
+        }
+      },
+      "spectral_summary": {
+        "raw_CCR_semantic": 0.00776,
+        "raw_CCR_persona": 0.00337,
+        "raw_ratio": 2.3,
+        "norm_CCR_semantic": 2.79e-07,
+        "norm_CCR_persona": 1.48e-07,
+        "norm_ratio": 1.89,
+        "avg_EffRank_semantic": 45.2,
+        "avg_EffRank_persona": 35.9
+      },
+      "mann_whitney": {
+        "test": "Semantic nCCR > Persona nCCR (one-sided)",
+        "U": 41.0,
+        "p": 0.0012,
+        "significant": true,
+        "cohens_d": 2.37,
+        "sem_values": [
+          2.4e-07,
+          4.01e-07,
+          1.92e-07,
+          3.38e-07,
+          2.56e-07,
+          2.48e-07
+        ],
+        "per_values": [
+          1.16e-07,
+          1.54e-07,
+          1.17e-07,
+          2.37e-07,
+          1.22e-07,
+          1.55e-07,
+          1.34e-07
+        ]
+      },
+      "aperture_sweep": {
+        "antonym": {
+          "0.001": {
+            "CCR": 0.0,
+            "EffRank": 20.3
+          },
+          "0.005": {
+            "CCR": 0.0003,
+            "EffRank": 21.2
+          },
+          "0.0125": {
+            "CCR": 0.0015,
+            "EffRank": 24.9
+          },
+          "0.025": {
+            "CCR": 0.0039,
+            "EffRank": 32.2
+          },
+          "0.05": {
+            "CCR": 0.0076,
+            "EffRank": 45.6
+          },
+          "0.1": {
+            "CCR": 0.0126,
+            "EffRank": 68.4
+          },
+          "0.5": {
+            "CCR": 0.0252,
+            "EffRank": 98.3
+          },
+          "1.0": {
+            "CCR": 0.027,
+            "EffRank": 98.9
+          },
+          "5.0": {
+            "CCR": 0.0276,
+            "EffRank": 98.9
+          }
+        },
+        "sycophancy": {
+          "0.001": {
+            "CCR": 0.0,
+            "EffRank": 19.5
+          },
+          "0.005": {
+            "CCR": 0.0001,
+            "EffRank": 19.7
+          },
+          "0.0125": {
+            "CCR": 0.0003,
+            "EffRank": 20.6
+          },
+          "0.025": {
+            "CCR": 0.001,
+            "EffRank": 23.2
+          },
+          "0.05": {
+            "CCR": 0.0029,
+            "EffRank": 30.7
+          },
+          "0.1": {
+            "CCR": 0.0065,
+            "EffRank": 47.1
+          },
+          "0.5": {
+            "CCR": 0.0214,
+            "EffRank": 95.4
+          },
+          "1.0": {
+            "CCR": 0.0255,
+            "EffRank": 98.6
+          },
+          "5.0": {
+            "CCR": 0.0275,
+            "EffRank": 99.0
+          }
+        }
+      },
+      "theory": {
+        "antonym": {
+          "rawCCR": 0.00757,
+          "SPR": 0.0045,
+          "SCR": 0.5942,
+          "nCCR": 2.4e-07,
+          "EffRank": 45.6
+        },
+        "country_capital": {
+          "rawCCR": 0.00758,
+          "SPR": 0.00543,
+          "SCR": 0.7155,
+          "nCCR": 4.01e-07,
+          "EffRank": 38.0
+        },
+        "present_past": {
+          "rawCCR": 0.00712,
+          "SPR": 0.0039,
+          "SCR": 0.5473,
+          "nCCR": 1.92e-07,
+          "EffRank": 46.7
+        },
+        "english_french": {
+          "rawCCR": 0.00862,
+          "SPR": 0.00585,
+          "SCR": 0.6791,
+          "nCCR": 3.38e-07,
+          "EffRank": 45.5
+        },
+        "singular_plural": {
+          "rawCCR": 0.00754,
+          "SPR": 0.00461,
+          "SCR": 0.6108,
+          "nCCR": 2.56e-07,
+          "EffRank": 44.2
+        },
+        "capitalize": {
+          "rawCCR": 0.00811,
+          "SPR": 0.00459,
+          "SCR": 0.5656,
+          "nCCR": 2.48e-07,
+          "EffRank": 51.4
+        },
+        "sycophancy": {
+          "rawCCR": 0.00295,
+          "SPR": 0.00102,
+          "SCR": 0.3444,
+          "nCCR": 1.16e-07,
+          "EffRank": 30.7
+        },
+        "hallucination": {
+          "rawCCR": 0.00363,
+          "SPR": 0.00141,
+          "SCR": 0.3899,
+          "nCCR": 1.54e-07,
+          "EffRank": 33.3
+        },
+        "evil": {
+          "rawCCR": 0.00294,
+          "SPR": 0.000851,
+          "SCR": 0.2889,
+          "nCCR": 1.17e-07,
+          "EffRank": 36.5
+        },
+        "impolite": {
+          "rawCCR": 0.00451,
+          "SPR": 0.00171,
+          "SCR": 0.3789,
+          "nCCR": 2.37e-07,
+          "EffRank": 42.6
+        },
+        "optimistic": {
+          "rawCCR": 0.00272,
+          "SPR": 0.000898,
+          "SCR": 0.3306,
+          "nCCR": 1.22e-07,
+          "EffRank": 29.4
+        },
+        "apathetic": {
+          "rawCCR": 0.00345,
+          "SPR": 0.00124,
+          "SCR": 0.3607,
+          "nCCR": 1.55e-07,
+          "EffRank": 34.2
+        },
+        "humorous": {
+          "rawCCR": 0.00341,
+          "SPR": 0.000935,
+          "SCR": 0.2741,
+          "nCCR": 1.34e-07,
+          "EffRank": 44.6
+        }
+      },
+      "norm_depths": {
+        "antonym": {
+          "norm_peak": 26,
+          "depth_pct": 93
+        },
+        "country_capital": {
+          "norm_peak": 26,
+          "depth_pct": 93
+        },
+        "present_past": {
+          "norm_peak": 24,
+          "depth_pct": 86
+        },
+        "english_french": {
+          "norm_peak": 26,
+          "depth_pct": 93
+        },
+        "singular_plural": {
+          "norm_peak": 26,
+          "depth_pct": 93
+        },
+        "capitalize": {
+          "norm_peak": 24,
+          "depth_pct": 86
+        },
+        "sycophancy": {
+          "norm_peak": 22,
+          "depth_pct": 79
+        },
+        "hallucination": {
+          "norm_peak": 14,
+          "depth_pct": 50
+        },
+        "evil": {
+          "norm_peak": 14,
+          "depth_pct": 50
+        },
+        "impolite": {
+          "norm_peak": 22,
+          "depth_pct": 79
+        },
+        "optimistic": {
+          "norm_peak": 14,
+          "depth_pct": 50
+        },
+        "apathetic": {
+          "norm_peak": 22,
+          "depth_pct": 79
+        },
+        "humorous": {
+          "norm_peak": 14,
+          "depth_pct": 50
+        }
+      },
+      "persona_norms": {
+        "sycophancy": {
+          "L9": 6.5,
+          "L19": 17.4
+        },
+        "hallucination": {
+          "L9": 6.0,
+          "L19": 16.8
+        },
+        "evil": {
+          "L9": 7.1,
+          "L19": 20.5
+        },
+        "impolite": {
+          "L9": 8.1,
+          "L19": 21.5
+        },
+        "optimistic": {
+          "L9": 4.7,
+          "L19": 12.8
+        },
+        "apathetic": {
+          "L9": 9.7,
+          "L19": 24.7
+        },
+        "humorous": {
+          "L9": 11.6,
+          "L19": 28.2
+        }
+      },
+      "semantic_results": {
+        "antonym": {
+          "baseline_mean": 0.031,
+          "baseline_std": 0.0,
+          "conceptor_mean": 0.583,
+          "conceptor_std": 0.015,
+          "additive_mean": 0.438,
+          "additive_std": 0.0,
+          "best_config": {
+            "layer": 18,
+            "beta": 4.0,
+            "aperture": 0.0125
+          }
+        },
+        "country_capital": {
+          "baseline_mean": 0.0,
+          "baseline_std": 0.0,
+          "conceptor_mean": 0.427,
+          "conceptor_std": 0.029,
+          "additive_mean": 0.281,
+          "additive_std": 0.0,
+          "best_config": {
+            "layer": 16,
+            "beta": 1.0,
+            "aperture": 0.05
+          }
+        },
+        "present_past": {
+          "baseline_mean": 0.062,
+          "baseline_std": 0.0,
+          "conceptor_mean": 0.969,
+          "conceptor_std": 0.0,
+          "additive_mean": 0.969,
+          "additive_std": 0.0,
+          "best_config": {
+            "layer": 8,
+            "beta": 5.0,
+            "aperture": 0.05
+          }
+        },
+        "english_french": {
+          "baseline_mean": 0.0,
+          "baseline_std": 0.0,
+          "conceptor_mean": 0.302,
+          "conceptor_std": 0.015,
+          "additive_mean": 0.219,
+          "additive_std": 0.0,
+          "best_config": {
+            "layer": 20,
+            "beta": 2.0,
+            "aperture": 0.0125
+          }
+        },
+        "singular_plural": {
+          "baseline_mean": 0.0,
+          "baseline_std": 0.0,
+          "conceptor_mean": 0.646,
+          "conceptor_std": 0.015,
+          "additive_mean": 0.688,
+          "additive_std": 0.0,
+          "best_config": {
+            "layer": 22,
+            "beta": 2.0,
+            "aperture": 0.1
+          }
+        },
+        "capitalize": {
+          "baseline_mean": 0.0,
+          "baseline_std": 0.0,
+          "conceptor_mean": 0.708,
+          "conceptor_std": 0.015,
+          "additive_mean": 0.656,
+          "additive_std": 0.0,
+          "best_config": {
+            "layer": 18,
+            "beta": 1.0,
+            "aperture": 0.05
+          }
+        }
+      },
+      "persona_table": {
+        "sycophancy": {
+          "baseline": {
+            "trait": 31.0,
+            "coherence": 89.6
+          },
+          "additive_L19_coef1.5": {
+            "trait": 12.5,
+            "coherence": 85.1
+          },
+          "additive_L19_coef3.0": {
+            "trait": 10.0,
+            "coherence": 76.4
+          },
+          "conceptor_suppress_L9_b2.0": {
+            "trait": 30.0,
+            "coherence": 90.2
+          },
+          "conceptor_suppress_L9_b3.9": {
+            "trait": 39.8,
+            "coherence": 59.5
+          },
+          "conceptor_enhance_L9_b1.0": {
+            "trait": 0.0,
+            "coherence": 0.0
+          },
+          "conceptor_enhance_L9_b2.0": {
+            "trait": 0.0,
+            "coherence": 0.0
+          },
+          "additive_L9_coef1.5": {
+            "trait": 27.0,
+            "coherence": 88.9
+          }
+        },
+        "hallucination": {
+          "baseline": {
+            "trait": 22.5,
+            "coherence": 91.1
+          },
+          "additive_L19_coef1.5": {
+            "trait": 5.2,
+            "coherence": 96.4
+          },
+          "additive_L19_coef3.0": {
+            "trait": 7.5,
+            "coherence": 93.5
+          },
+          "conceptor_suppress_L9_b2.0": {
+            "trait": 52.0,
+            "coherence": 88.1
+          },
+          "conceptor_suppress_L9_b3.9": {
+            "trait": 100.0,
+            "coherence": 67.1
+          },
+          "conceptor_enhance_L9_b1.0": {
+            "trait": 100.0,
+            "coherence": 0.0
+          },
+          "conceptor_enhance_L9_b2.0": {
+            "trait": 100.0,
+            "coherence": 0.0
+          },
+          "additive_L9_coef1.5": {
+            "trait": 14.0,
+            "coherence": 95.0
+          }
+        },
+        "evil": {
+          "baseline": {
+            "trait": 0.0,
+            "coherence": 90.1
+          },
+          "additive_L19_coef1.5": {
+            "trait": 0.0,
+            "coherence": 84.5
+          },
+          "additive_L19_coef3.0": {
+            "trait": 0.0,
+            "coherence": 69.5
+          },
+          "conceptor_suppress_L9_b2.0": {
+            "trait": 0.0,
+            "coherence": 88.9
+          },
+          "conceptor_suppress_L9_b3.9": {
+            "trait": 1.8,
+            "coherence": 75.6
+          },
+          "conceptor_enhance_L9_b1.0": {
+            "trait": 0.0,
+            "coherence": 0.0
+          },
+          "conceptor_enhance_L9_b2.0": {
+            "trait": 0.0,
+            "coherence": 0.0
+          },
+          "additive_L9_coef1.5": {
+            "trait": 0.0,
+            "coherence": 89.6
+          }
+        },
+        "impolite": {
+          "baseline": {
+            "trait": 0.0,
+            "coherence": 87.6
+          },
+          "additive_L19_coef1.5": {
+            "trait": 0.0,
+            "coherence": 83.5
+          },
+          "additive_L19_coef3.0": {
+            "trait": 0.0,
+            "coherence": 57.8
+          },
+          "conceptor_suppress_L9_b2.0": {
+            "trait": 0.0,
+            "coherence": 87.0
+          },
+          "conceptor_suppress_L9_b3.9": {
+            "trait": 0.0,
+            "coherence": 64.2
+          },
+          "conceptor_enhance_L9_b1.0": {
+            "trait": 47.5,
+            "coherence": 0.0
+          },
+          "conceptor_enhance_L9_b2.0": {
+            "trait": 40.0,
+            "coherence": 0.0
+          },
+          "additive_L9_coef1.5": {
+            "trait": 0.0,
+            "coherence": 87.4
+          }
+        },
+        "optimistic": {
+          "baseline": {
+            "trait": 59.0,
+            "coherence": 87.9
+          },
+          "additive_L19_coef1.5": {
+            "trait": 39.5,
+            "coherence": 88.0
+          },
+          "additive_L19_coef3.0": {
+            "trait": 12.2,
+            "coherence": 81.5
+          },
+          "conceptor_suppress_L9_b2.0": {
+            "trait": 53.5,
+            "coherence": 90.8
+          },
+          "conceptor_suppress_L9_b3.9": {
+            "trait": 31.5,
+            "coherence": 73.5
+          },
+          "conceptor_enhance_L9_b1.0": {
+            "trait": 0.0,
+            "coherence": 0.0
+          },
+          "conceptor_enhance_L9_b2.0": {
+            "trait": 0.0,
+            "coherence": 0.0
+          },
+          "additive_L9_coef1.5": {
+            "trait": 49.8,
+            "coherence": 88.5
+          }
+        },
+        "apathetic": {
+          "baseline": {
+            "trait": 0.0,
+            "coherence": 89.0
+          },
+          "additive_L19_coef1.5": {
+            "trait": 0.0,
+            "coherence": 85.4
+          },
+          "additive_L19_coef3.0": {
+            "trait": 55.8,
+            "coherence": 31.8
+          },
+          "conceptor_suppress_L9_b2.0": {
+            "trait": 2.8,
+            "coherence": 90.2
+          },
+          "conceptor_suppress_L9_b3.9": {
+            "trait": 55.8,
+            "coherence": 74.2
+          },
+          "conceptor_enhance_L9_b1.0": {
+            "trait": 100.0,
+            "coherence": 0.0
+          },
+          "conceptor_enhance_L9_b2.0": {
+            "trait": 100.0,
+            "coherence": 0.0
+          },
+          "additive_L9_coef1.5": {
+            "trait": 0.0,
+            "coherence": 90.6
+          }
+        },
+        "humorous": {
+          "baseline": {
+            "trait": 0.0,
+            "coherence": 86.1
+          },
+          "additive_L19_coef1.5": {
+            "trait": 0.0,
+            "coherence": 85.1
+          },
+          "additive_L19_coef3.0": {
+            "trait": 0.0,
+            "coherence": 43.9
+          },
+          "conceptor_suppress_L9_b2.0": {
+            "trait": 0.0,
+            "coherence": 88.2
+          },
+          "conceptor_suppress_L9_b3.9": {
+            "trait": 0.0,
+            "coherence": 65.6
+          },
+          "conceptor_enhance_L9_b1.0": {
+            "trait": 1.2,
+            "coherence": 0.0
+          },
+          "conceptor_enhance_L9_b2.0": {
+            "trait": 0.0,
+            "coherence": 0.0
+          },
+          "additive_L9_coef1.5": {
+            "trait": 0.0,
+            "coherence": 86.2
+          }
+        }
+      },
+      "correlation": {
+        "category_separation": {
+          "sem_mean_nCCR": 2.79e-07,
+          "per_mean_nCCR": 1.48e-07,
+          "ratio": 1.89,
+          "MW_U": 41.0,
+          "MW_p": 0.0012,
+          "significant": true,
+          "cohens_d": 2.37
+        },
+        "per_concept": [
+          {
+            "name": "country_capital",
+            "type": "semantic",
+            "nCCR": 4.01e-07,
+            "rawCCR": 0.00758,
+            "acc": 0.427
+          },
+          {
+            "name": "english_french",
+            "type": "semantic",
+            "nCCR": 3.38e-07,
+            "rawCCR": 0.00862,
+            "acc": 0.302
+          },
+          {
+            "name": "singular_plural",
+            "type": "semantic",
+            "nCCR": 2.56e-07,
+            "rawCCR": 0.00754,
+            "acc": 0.646
+          },
+          {
+            "name": "capitalize",
+            "type": "semantic",
+            "nCCR": 2.48e-07,
+            "rawCCR": 0.00811,
+            "acc": 0.708
+          },
+          {
+            "name": "antonym",
+            "type": "semantic",
+            "nCCR": 2.4e-07,
+            "rawCCR": 0.00757,
+            "acc": 0.583
+          },
+          {
+            "name": "impolite",
+            "type": "persona",
+            "nCCR": 2.37e-07,
+            "rawCCR": 0.00451,
+            "acc": 0.0
+          },
+          {
+            "name": "present_past",
+            "type": "semantic",
+            "nCCR": 1.92e-07,
+            "rawCCR": 0.00712,
+            "acc": 0.969
+          },
+          {
+            "name": "apathetic",
+            "type": "persona",
+            "nCCR": 1.55e-07,
+            "rawCCR": 0.00345,
+            "acc": 0.0
+          },
+          {
+            "name": "hallucination",
+            "type": "persona",
+            "nCCR": 1.54e-07,
+            "rawCCR": 0.00363,
+            "acc": 0.0
+          },
+          {
+            "name": "humorous",
+            "type": "persona",
+            "nCCR": 1.34e-07,
+            "rawCCR": 0.00341,
+            "acc": 0.0
+          },
+          {
+            "name": "optimistic",
+            "type": "persona",
+            "nCCR": 1.22e-07,
+            "rawCCR": 0.00272,
+            "acc": 0.0
+          },
+          {
+            "name": "evil",
+            "type": "persona",
+            "nCCR": 1.17e-07,
+            "rawCCR": 0.00294,
+            "acc": 0.0
+          },
+          {
+            "name": "sycophancy",
+            "type": "persona",
+            "nCCR": 1.16e-07,
+            "rawCCR": 0.00295,
+            "acc": 0.0
+          }
+        ],
+        "note": "These measurements describe category differences and the association between nCCR and semantic-task accuracy in the evaluated sample. Predictive performance was not evaluated."
+      },
+      "judge_stats": {
+        "total": 4481,
+        "ok": 4481,
+        "blocked": 0,
+        "errors": 0,
+        "model": "gemini-2.5-flash",
+        "total_scored": 2240
+      }
+    }
+  },
+  "Llama-3.1-8B": {
+    "results": {
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "model_short": "Llama-3.1-8B-Instruct",
+      "num_layers": 32,
+      "hidden_size": 4096,
+      "third_layer": 10,
+      "chen_layer": 15,
+      "analysis_layers": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        15,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30
+      ],
+      "config": {
+        "SEED": 42,
+        "APERTURE": 0.05,
+        "BETA_CONCEPTOR": 2.0,
+        "BETA_ADDITIVE": 2.3,
+        "NUM_ICL_PROMPTS": 100,
+        "NUM_ICL_EXAMPLES": 10,
+        "N_TEST_PROMPTS": 50,
+        "N_SEEDS": 3,
+        "N_INSTRUCTION_PAIRS": 5,
+        "N_EXTRACTION_QUESTIONS": 20,
+        "N_SAMPLES": 40,
+        "MAX_NEW_TOKENS": 200,
+        "BETAS_CONCEPTOR": [
+          0.5,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0
+        ],
+        "APERTURES_SEMANTIC": [
+          0.001,
+          0.0125,
+          0.05,
+          0.1
+        ],
+        "APERTURES_SWEEP": [
+          0.001,
+          0.005,
+          0.0125,
+          0.025,
+          0.05,
+          0.1,
+          0.5,
+          1.0,
+          5.0
+        ],
+        "JUDGE_MODEL": "gemini-2.5-flash",
+        "FAST_MODE": false,
+        "CHEN_BEST_LAYERS": {
+          "default": 15
+        }
+      },
+      "extraction": {
+        "semantic_N": 100,
+        "persona_N": 100,
+        "total_checks": 340,
+        "all_verified": true,
+        "no_nan": true
+      },
+      "spectral": {
+        "antonym": {
+          "raw_peak": 30,
+          "rawCCR": 0.000498,
+          "norm_peak": 26,
+          "nCCR": 2.69e-07,
+          "EffRank": 21.5
+        },
+        "country_capital": {
+          "raw_peak": 30,
+          "rawCCR": 0.000406,
+          "norm_peak": 26,
+          "nCCR": 3.13e-07,
+          "EffRank": 23.7
+        },
+        "present_past": {
+          "raw_peak": 30,
+          "rawCCR": 0.000271,
+          "norm_peak": 22,
+          "nCCR": 1.56e-07,
+          "EffRank": 21.0
+        },
+        "english_french": {
+          "raw_peak": 30,
+          "rawCCR": 0.000754,
+          "norm_peak": 30,
+          "nCCR": 3.4e-07,
+          "EffRank": 23.9
+        },
+        "singular_plural": {
+          "raw_peak": 30,
+          "rawCCR": 0.000463,
+          "norm_peak": 26,
+          "nCCR": 2.48e-07,
+          "EffRank": 21.0
+        },
+        "capitalize": {
+          "raw_peak": 30,
+          "rawCCR": 0.000343,
+          "norm_peak": 26,
+          "nCCR": 1.92e-07,
+          "EffRank": 20.6
+        },
+        "sycophancy": {
+          "raw_peak": 30,
+          "rawCCR": 8.16e-05,
+          "norm_peak": 22,
+          "nCCR": 1.39e-07,
+          "EffRank": 21.9
+        },
+        "hallucination": {
+          "raw_peak": 30,
+          "rawCCR": 9.72e-05,
+          "norm_peak": 22,
+          "nCCR": 1.73e-07,
+          "EffRank": 21.7
+        },
+        "evil": {
+          "raw_peak": 30,
+          "rawCCR": 6.93e-05,
+          "norm_peak": 18,
+          "nCCR": 1.22e-07,
+          "EffRank": 18.9
+        },
+        "impolite": {
+          "raw_peak": 30,
+          "rawCCR": 0.000119,
+          "norm_peak": 22,
+          "nCCR": 2.38e-07,
+          "EffRank": 23.6
+        },
+        "optimistic": {
+          "raw_peak": 30,
+          "rawCCR": 6.84e-05,
+          "norm_peak": 22,
+          "nCCR": 1.26e-07,
+          "EffRank": 13.7
+        },
+        "apathetic": {
+          "raw_peak": 30,
+          "rawCCR": 0.000107,
+          "norm_peak": 22,
+          "nCCR": 1.81e-07,
+          "EffRank": 22.9
+        },
+        "humorous": {
+          "raw_peak": 30,
+          "rawCCR": 8.18e-05,
+          "norm_peak": 22,
+          "nCCR": 1.64e-07,
+          "EffRank": 31.7
+        }
+      },
+      "spectral_summary": {
+        "raw_CCR_semantic": 0.000456,
+        "raw_CCR_persona": 8.92e-05,
+        "raw_ratio": 5.11,
+        "norm_CCR_semantic": 2.53e-07,
+        "norm_CCR_persona": 1.63e-07,
+        "norm_ratio": 1.55,
+        "avg_EffRank_semantic": 22.0,
+        "avg_EffRank_persona": 22.1
+      },
+      "mann_whitney": {
+        "test": "Semantic nCCR > Persona nCCR (one-sided)",
+        "U": 37.0,
+        "p": 0.0111,
+        "significant": true,
+        "cohens_d": 1.75,
+        "sem_values": [
+          2.69e-07,
+          3.13e-07,
+          1.56e-07,
+          3.4e-07,
+          2.48e-07,
+          1.92e-07
+        ],
+        "per_values": [
+          1.39e-07,
+          1.73e-07,
+          1.22e-07,
+          2.38e-07,
+          1.26e-07,
+          1.81e-07,
+          1.64e-07
+        ]
+      },
+      "aperture_sweep": {
+        "antonym": {
+          "0.001": {
+            "CCR": 0.0,
+            "EffRank": 19.6
+          },
+          "0.005": {
+            "CCR": 0.0,
+            "EffRank": 19.6
+          },
+          "0.0125": {
+            "CCR": 0.0,
+            "EffRank": 19.8
+          },
+          "0.025": {
+            "CCR": 0.0001,
+            "EffRank": 20.1
+          },
+          "0.05": {
+            "CCR": 0.0005,
+            "EffRank": 21.5
+          },
+          "0.1": {
+            "CCR": 0.0016,
+            "EffRank": 25.4
+          },
+          "0.5": {
+            "CCR": 0.0082,
+            "EffRank": 51.5
+          },
+          "1.0": {
+            "CCR": 0.0128,
+            "EffRank": 74.3
+          },
+          "5.0": {
+            "CCR": 0.0226,
+            "EffRank": 98.6
+          }
+        },
+        "sycophancy": {
+          "0.001": {
+            "CCR": 0.0,
+            "EffRank": 21.4
+          },
+          "0.005": {
+            "CCR": 0.0,
+            "EffRank": 21.4
+          },
+          "0.0125": {
+            "CCR": 0.0,
+            "EffRank": 21.4
+          },
+          "0.025": {
+            "CCR": 0.0,
+            "EffRank": 21.5
+          },
+          "0.05": {
+            "CCR": 0.0001,
+            "EffRank": 21.9
+          },
+          "0.1": {
+            "CCR": 0.0003,
+            "EffRank": 23.3
+          },
+          "0.5": {
+            "CCR": 0.0041,
+            "EffRank": 43.8
+          },
+          "1.0": {
+            "CCR": 0.0087,
+            "EffRank": 65.7
+          },
+          "5.0": {
+            "CCR": 0.0214,
+            "EffRank": 98.0
+          }
+        }
+      },
+      "theory": {
+        "antonym": {
+          "rawCCR": 0.000498,
+          "SPR": 4.71e-05,
+          "SCR": 0.0948,
+          "nCCR": 2.69e-07,
+          "EffRank": 21.5
+        },
+        "country_capital": {
+          "rawCCR": 0.000406,
+          "SPR": 2.86e-05,
+          "SCR": 0.0703,
+          "nCCR": 3.13e-07,
+          "EffRank": 23.7
+        },
+        "present_past": {
+          "rawCCR": 0.000271,
+          "SPR": 1.44e-05,
+          "SCR": 0.053,
+          "nCCR": 1.56e-07,
+          "EffRank": 21.0
+        },
+        "english_french": {
+          "rawCCR": 0.000754,
+          "SPR": 9.71e-05,
+          "SCR": 0.1289,
+          "nCCR": 3.4e-07,
+          "EffRank": 23.9
+        },
+        "singular_plural": {
+          "rawCCR": 0.000463,
+          "SPR": 4.18e-05,
+          "SCR": 0.0902,
+          "nCCR": 2.48e-07,
+          "EffRank": 21.0
+        },
+        "capitalize": {
+          "rawCCR": 0.000343,
+          "SPR": 2.33e-05,
+          "SCR": 0.0681,
+          "nCCR": 1.92e-07,
+          "EffRank": 20.6
+        },
+        "sycophancy": {
+          "rawCCR": 8.16e-05,
+          "SPR": 1.25e-06,
+          "SCR": 0.0153,
+          "nCCR": 1.39e-07,
+          "EffRank": 21.9
+        },
+        "hallucination": {
+          "rawCCR": 9.72e-05,
+          "SPR": 1.78e-06,
+          "SCR": 0.0183,
+          "nCCR": 1.73e-07,
+          "EffRank": 21.7
+        },
+        "evil": {
+          "rawCCR": 6.93e-05,
+          "SPR": 1.04e-06,
+          "SCR": 0.015,
+          "nCCR": 1.22e-07,
+          "EffRank": 18.9
+        },
+        "impolite": {
+          "rawCCR": 0.000119,
+          "SPR": 2.45e-06,
+          "SCR": 0.0206,
+          "nCCR": 2.38e-07,
+          "EffRank": 23.6
+        },
+        "optimistic": {
+          "rawCCR": 6.84e-05,
+          "SPR": 1.4e-06,
+          "SCR": 0.0204,
+          "nCCR": 1.26e-07,
+          "EffRank": 13.7
+        },
+        "apathetic": {
+          "rawCCR": 0.000107,
+          "SPR": 2.06e-06,
+          "SCR": 0.0192,
+          "nCCR": 1.81e-07,
+          "EffRank": 22.9
+        },
+        "humorous": {
+          "rawCCR": 8.18e-05,
+          "SPR": 8.64e-07,
+          "SCR": 0.0106,
+          "nCCR": 1.64e-07,
+          "EffRank": 31.7
+        }
+      },
+      "norm_depths": {
+        "antonym": {
+          "norm_peak": 26,
+          "depth_pct": 81
+        },
+        "country_capital": {
+          "norm_peak": 26,
+          "depth_pct": 81
+        },
+        "present_past": {
+          "norm_peak": 22,
+          "depth_pct": 69
+        },
+        "english_french": {
+          "norm_peak": 30,
+          "depth_pct": 94
+        },
+        "singular_plural": {
+          "norm_peak": 26,
+          "depth_pct": 81
+        },
+        "capitalize": {
+          "norm_peak": 26,
+          "depth_pct": 81
+        },
+        "sycophancy": {
+          "norm_peak": 22,
+          "depth_pct": 69
+        },
+        "hallucination": {
+          "norm_peak": 22,
+          "depth_pct": 69
+        },
+        "evil": {
+          "norm_peak": 18,
+          "depth_pct": 56
+        },
+        "impolite": {
+          "norm_peak": 22,
+          "depth_pct": 69
+        },
+        "optimistic": {
+          "norm_peak": 22,
+          "depth_pct": 69
+        },
+        "apathetic": {
+          "norm_peak": 22,
+          "depth_pct": 69
+        },
+        "humorous": {
+          "norm_peak": 22,
+          "depth_pct": 69
+        }
+      },
+      "persona_norms": {
+        "sycophancy": {
+          "L10": 1.4,
+          "L15": 2.8
+        },
+        "hallucination": {
+          "L10": 1.8,
+          "L15": 3.2
+        },
+        "evil": {
+          "L10": 1.8,
+          "L15": 2.9
+        },
+        "impolite": {
+          "L10": 1.3,
+          "L15": 2.6
+        },
+        "optimistic": {
+          "L10": 1.1,
+          "L15": 2.4
+        },
+        "apathetic": {
+          "L10": 1.8,
+          "L15": 3.8
+        },
+        "humorous": {
+          "L10": 1.9,
+          "L15": 3.4
+        }
+      },
+      "semantic_results": {
+        "antonym": {
+          "baseline_mean": 0.0,
+          "baseline_std": 0.0,
+          "conceptor_mean": 0.448,
+          "conceptor_std": 0.015,
+          "additive_mean": 0.344,
+          "additive_std": 0.0,
+          "best_config": {
+            "layer": 14,
+            "beta": 5.0,
+            "aperture": 0.1
+          }
+        },
+        "country_capital": {
+          "baseline_mean": 0.0,
+          "baseline_std": 0.0,
+          "conceptor_mean": 0.49,
+          "conceptor_std": 0.015,
+          "additive_mean": 0.271,
+          "additive_std": 0.015,
+          "best_config": {
+            "layer": 15,
+            "beta": 4.0,
+            "aperture": 0.1
+          }
+        },
+        "present_past": {
+          "baseline_mean": 0.156,
+          "baseline_std": 0.0,
+          "conceptor_mean": 0.927,
+          "conceptor_std": 0.015,
+          "additive_mean": 1.0,
+          "additive_std": 0.0,
+          "best_config": {
+            "layer": 12,
+            "beta": 5.0,
+            "aperture": 0.1
+          }
+        },
+        "english_french": {
+          "baseline_mean": 0.031,
+          "baseline_std": 0.0,
+          "conceptor_mean": 0.375,
+          "conceptor_std": 0.0,
+          "additive_mean": 0.25,
+          "additive_std": 0.0,
+          "best_config": {
+            "layer": 14,
+            "beta": 5.0,
+            "aperture": 0.1
+          }
+        },
+        "singular_plural": {
+          "baseline_mean": 0.094,
+          "baseline_std": 0.0,
+          "conceptor_mean": 0.719,
+          "conceptor_std": 0.0,
+          "additive_mean": 0.906,
+          "additive_std": 0.0,
+          "best_config": {
+            "layer": 14,
+            "beta": 4.0,
+            "aperture": 0.1
+          }
+        },
+        "capitalize": {
+          "baseline_mean": 0.125,
+          "baseline_std": 0.0,
+          "conceptor_mean": 0.76,
+          "conceptor_std": 0.015,
+          "additive_mean": 0.854,
+          "additive_std": 0.015,
+          "best_config": {
+            "layer": 14,
+            "beta": 5.0,
+            "aperture": 0.1
+          }
+        }
+      },
+      "persona_table": {
+        "sycophancy": {
+          "baseline": {
+            "trait": 39.8,
+            "coherence": 79.8
+          },
+          "additive_L15_coef1.5": {
+            "trait": 11.5,
+            "coherence": 74.0
+          },
+          "additive_L15_coef3.0": {
+            "trait": 3.0,
+            "coherence": 11.2
+          },
+          "conceptor_suppress_L10_b2.0": {
+            "trait": 26.0,
+            "coherence": 80.9
+          },
+          "conceptor_suppress_L10_b3.9": {
+            "trait": 23.5,
+            "coherence": 11.2
+          },
+          "conceptor_enhance_L10_b1.0": {
+            "trait": 0.0,
+            "coherence": 0.0
+          },
+          "conceptor_enhance_L10_b2.0": {
+            "trait": 0.0,
+            "coherence": 0.0
+          },
+          "additive_L10_coef1.5": {
+            "trait": 25.5,
+            "coherence": 80.2
+          }
+        },
+        "hallucination": {
+          "baseline": {
+            "trait": 17.5,
+            "coherence": 90.9
+          },
+          "additive_L15_coef1.5": {
+            "trait": 5.0,
+            "coherence": 91.5
+          },
+          "additive_L15_coef3.0": {
+            "trait": 30.0,
+            "coherence": 11.2
+          },
+          "conceptor_suppress_L10_b2.0": {
+            "trait": 45.0,
+            "coherence": 80.0
+          },
+          "conceptor_suppress_L10_b3.9": {
+            "trait": 100.0,
+            "coherence": 13.6
+          },
+          "conceptor_enhance_L10_b1.0": {
+            "trait": 100.0,
+            "coherence": 0.0
+          },
+          "conceptor_enhance_L10_b2.0": {
+            "trait": 100.0,
+            "coherence": 0.0
+          },
+          "additive_L10_coef1.5": {
+            "trait": 22.8,
+            "coherence": 81.8
+          }
+        },
+        "evil": {
+          "baseline": {
+            "trait": 0.0,
+            "coherence": 83.2
+          },
+          "additive_L15_coef1.5": {
+            "trait": 0.0,
+            "coherence": 79.1
+          },
+          "additive_L15_coef3.0": {
+            "trait": 0.0,
+            "coherence": 44.8
+          },
+          "conceptor_suppress_L10_b2.0": {
+            "trait": 0.0,
+            "coherence": 82.1
+          },
+          "conceptor_suppress_L10_b3.9": {
+            "trait": 1.2,
+            "coherence": 21.0
+          },
+          "conceptor_enhance_L10_b1.0": {
+            "trait": 0.0,
+            "coherence": 0.0
+          },
+          "conceptor_enhance_L10_b2.0": {
+            "trait": 0.0,
+            "coherence": 0.0
+          },
+          "additive_L10_coef1.5": {
+            "trait": 0.0,
+            "coherence": 83.0
+          }
+        },
+        "impolite": {
+          "baseline": {
+            "trait": 0.0,
+            "coherence": 81.0
+          },
+          "additive_L15_coef1.5": {
+            "trait": 0.0,
+            "coherence": 81.6
+          },
+          "additive_L15_coef3.0": {
+            "trait": 4.5,
+            "coherence": 39.4
+          },
+          "conceptor_suppress_L10_b2.0": {
+            "trait": 0.0,
+            "coherence": 83.9
+          },
+          "conceptor_suppress_L10_b3.9": {
+            "trait": 7.5,
+            "coherence": 28.1
+          },
+          "conceptor_enhance_L10_b1.0": {
+            "trait": 75.0,
+            "coherence": 0.0
+          },
+          "conceptor_enhance_L10_b2.0": {
+            "trait": 55.0,
+            "coherence": 0.0
+          },
+          "additive_L10_coef1.5": {
+            "trait": 0.0,
+            "coherence": 83.0
+          }
+        },
+        "optimistic": {
+          "baseline": {
+            "trait": 56.2,
+            "coherence": 82.4
+          },
+          "additive_L15_coef1.5": {
+            "trait": 17.8,
+            "coherence": 76.0
+          },
+          "additive_L15_coef3.0": {
+            "trait": 1.5,
+            "coherence": 47.9
+          },
+          "conceptor_suppress_L10_b2.0": {
+            "trait": 37.0,
+            "coherence": 81.1
+          },
+          "conceptor_suppress_L10_b3.9": {
+            "trait": 3.5,
+            "coherence": 14.1
+          },
+          "conceptor_enhance_L10_b1.0": {
+            "trait": 0.0,
+            "coherence": 0.0
+          },
+          "conceptor_enhance_L10_b2.0": {
+            "trait": 0.0,
+            "coherence": 0.0
+          },
+          "additive_L10_coef1.5": {
+            "trait": 34.5,
+            "coherence": 79.5
+          }
+        },
+        "apathetic": {
+          "baseline": {
+            "trait": 1.0,
+            "coherence": 82.5
+          },
+          "additive_L15_coef1.5": {
+            "trait": 0.0,
+            "coherence": 80.8
+          },
+          "additive_L15_coef3.0": {
+            "trait": 37.0,
+            "coherence": 32.1
+          },
+          "conceptor_suppress_L10_b2.0": {
+            "trait": 3.5,
+            "coherence": 83.9
+          },
+          "conceptor_suppress_L10_b3.9": {
+            "trait": 82.2,
+            "coherence": 21.5
+          },
+          "conceptor_enhance_L10_b1.0": {
+            "trait": 100.0,
+            "coherence": 0.0
+          },
+          "conceptor_enhance_L10_b2.0": {
+            "trait": 100.0,
+            "coherence": 0.0
+          },
+          "additive_L10_coef1.5": {
+            "trait": 0.0,
+            "coherence": 85.6
+          }
+        },
+        "humorous": {
+          "baseline": {
+            "trait": 0.0,
+            "coherence": 80.0
+          },
+          "additive_L15_coef1.5": {
+            "trait": 0.0,
+            "coherence": 77.1
+          },
+          "additive_L15_coef3.0": {
+            "trait": 0.0,
+            "coherence": 8.0
+          },
+          "conceptor_suppress_L10_b2.0": {
+            "trait": 0.0,
+            "coherence": 82.8
+          },
+          "conceptor_suppress_L10_b3.9": {
+            "trait": 0.0,
+            "coherence": 30.5
+          },
+          "conceptor_enhance_L10_b1.0": {
+            "trait": 0.0,
+            "coherence": 0.0
+          },
+          "conceptor_enhance_L10_b2.0": {
+            "trait": 0.0,
+            "coherence": 0.0
+          },
+          "additive_L10_coef1.5": {
+            "trait": 0.0,
+            "coherence": 82.5
+          }
+        }
+      },
+      "correlation": {
+        "category_separation": {
+          "sem_mean_nCCR": 2.53e-07,
+          "per_mean_nCCR": 1.63e-07,
+          "ratio": 1.55,
+          "MW_U": 37.0,
+          "MW_p": 0.0111,
+          "significant": true,
+          "cohens_d": 1.75
+        },
+        "per_concept": [
+          {
+            "name": "english_french",
+            "type": "semantic",
+            "nCCR": 3.4e-07,
+            "rawCCR": 0.000754,
+            "acc": 0.375
+          },
+          {
+            "name": "country_capital",
+            "type": "semantic",
+            "nCCR": 3.13e-07,
+            "rawCCR": 0.000406,
+            "acc": 0.49
+          },
+          {
+            "name": "antonym",
+            "type": "semantic",
+            "nCCR": 2.69e-07,
+            "rawCCR": 0.000498,
+            "acc": 0.448
+          },
+          {
+            "name": "singular_plural",
+            "type": "semantic",
+            "nCCR": 2.48e-07,
+            "rawCCR": 0.000463,
+            "acc": 0.719
+          },
+          {
+            "name": "impolite",
+            "type": "persona",
+            "nCCR": 2.38e-07,
+            "rawCCR": 0.000119,
+            "acc": 0.0
+          },
+          {
+            "name": "capitalize",
+            "type": "semantic",
+            "nCCR": 1.92e-07,
+            "rawCCR": 0.000343,
+            "acc": 0.76
+          },
+          {
+            "name": "apathetic",
+            "type": "persona",
+            "nCCR": 1.81e-07,
+            "rawCCR": 0.000107,
+            "acc": 0.0
+          },
+          {
+            "name": "hallucination",
+            "type": "persona",
+            "nCCR": 1.73e-07,
+            "rawCCR": 9.72e-05,
+            "acc": 0.0
+          },
+          {
+            "name": "humorous",
+            "type": "persona",
+            "nCCR": 1.64e-07,
+            "rawCCR": 8.18e-05,
+            "acc": 0.0
+          },
+          {
+            "name": "present_past",
+            "type": "semantic",
+            "nCCR": 1.56e-07,
+            "rawCCR": 0.000271,
+            "acc": 0.927
+          },
+          {
+            "name": "sycophancy",
+            "type": "persona",
+            "nCCR": 1.39e-07,
+            "rawCCR": 8.16e-05,
+            "acc": 0.0
+          },
+          {
+            "name": "optimistic",
+            "type": "persona",
+            "nCCR": 1.26e-07,
+            "rawCCR": 6.84e-05,
+            "acc": 0.0
+          },
+          {
+            "name": "evil",
+            "type": "persona",
+            "nCCR": 1.22e-07,
+            "rawCCR": 6.93e-05,
+            "acc": 0.0
+          }
+        ],
+        "note": "These measurements describe category differences and the association between nCCR and semantic-task accuracy in the evaluated sample. Predictive performance was not evaluated."
+      },
+      "judge_stats": {
+        "total": 4481,
+        "ok": 4481,
+        "blocked": 0,
+        "errors": 0,
+        "model": "gemini-2.5-flash",
+        "total_scored": 2240
+      }
+    }
+  }
+}

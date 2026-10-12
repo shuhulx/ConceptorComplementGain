@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "model_key": "7b",
+  "expected_response_rows": 640,
+  "actual_response_rows": 640,
+  "expected_judgments": 1280,
+  "complete_judgments": 1280,
+  "nominal_endpoint_tasks": 2560,
+  "recorded_content_attempts": 2560,
+  "recorded_provider_api_requests": 2560,
+  "scipy_version": "1.17.0",
+  "heuristic_refusal_used_in_headline_analysis": false,
+  "generated_token_ids_prospectively_stored": true,
+  "identical_text_judge_repeatability_rows": 14,
+  "categorical_trait_refusals": 6,
+  "generation_gates_recomputed_from_raw_rows": {
+    "prefix_status": "PASS",
+    "cap512_status": "PASS"
+  }
+}

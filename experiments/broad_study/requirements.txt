@@ -1,0 +1,16 @@
+# Numerical package versions recorded for the original study.
+numpy==1.26.4
+scipy==1.13.1
+
+# Model and evaluator packages; original exact versions were not recorded.
+# PyTorch advisory GHSA-63cw-57p8-fm3p affects torch <= 2.9.1.
+torch>=2.10.0
+transformer-lens
+transformers
+accelerate
+matplotlib
+google-genai
+google-api-core
+backoff
+tqdm
+

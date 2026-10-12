@@ -1,0 +1,51 @@
+{
+  "method_summary": {
+    "conceptor_not_beta1": {
+      "cells": 21,
+      "mean_balanced_accuracy": 0.8933333333333334,
+      "mean_excess_log_loss": -0.45490290178579845,
+      "mean_log_loss": 0.23824427877414686,
+      "mean_normalized_edit_mse_test": 0.0009402456087500638,
+      "mean_rank_removed": 0.0,
+      "mean_roc_auc": 0.9275714285714287
+    },
+    "inlp_r1": {
+      "cells": 21,
+      "mean_balanced_accuracy": 0.8292857142857143,
+      "mean_excess_log_loss": -0.3223787544161977,
+      "mean_log_loss": 0.37076842614374766,
+      "mean_normalized_edit_mse_test": 0.07943198634366626,
+      "mean_rank_removed": 1.0,
+      "mean_roc_auc": 0.8945571428571428
+    },
+    "inlp_r20": {
+      "cells": 21,
+      "mean_balanced_accuracy": 0.6685714285714285,
+      "mean_excess_log_loss": -0.06796328074393701,
+      "mean_log_loss": 0.6251838998160082,
+      "mean_normalized_edit_mse_test": 0.5513351600603179,
+      "mean_rank_removed": 20.0,
+      "mean_roc_auc": 0.752357142857143
+    },
+    "leace_paper_exact": {
+      "cells": 21,
+      "mean_balanced_accuracy": 0.6628571428571428,
+      "mean_excess_log_loss": -0.04471514649758404,
+      "mean_log_loss": 0.6484320340623614,
+      "mean_normalized_edit_mse_test": 0.07851590435414955,
+      "mean_rank_removed": 1.0,
+      "mean_roc_auc": 0.7302952380952381
+    },
+    "raw": {
+      "cells": 21,
+      "mean_balanced_accuracy": 0.893095238095238,
+      "mean_excess_log_loss": -0.4549348592350699,
+      "mean_log_loss": 0.23821232132487544,
+      "mean_normalized_edit_mse_test": 0.0,
+      "mean_rank_removed": 0.0,
+      "mean_roc_auc": 0.9278000000000001
+    }
+  },
+  "mode": "primary",
+  "primary_split": "question_grouped"
+}

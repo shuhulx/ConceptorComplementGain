@@ -1,0 +1,7 @@
+numpy>=1.26
+scipy>=1.13
+# PyTorch advisory GHSA-63cw-57p8-fm3p affects torch <= 2.9.1.
+torch>=2.10.0
+tqdm>=4.66
+transformer-lens>=2.0
+transformers>=4.40

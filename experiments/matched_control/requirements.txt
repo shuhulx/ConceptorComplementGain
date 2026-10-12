@@ -1,0 +1,5 @@
+# Numerical helpers and processed-result analysis; model helpers use examples/requirements.txt.
+torch>=2.10.0
+numpy==2.0.2
+pandas==2.2.3
+scipy==1.17.0

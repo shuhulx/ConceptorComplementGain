@@ -1,0 +1,10 @@
+# CPU tests and examples. Install torch==2.13.0 from the CPU wheel index first.
+matplotlib==3.10.8
+numpy==2.4.2
+pandas==3.0.1
+pytest==9.0.3
+requests==2.33.0
+ruff==0.16.4
+scikit-learn==1.8.0
+scipy==1.17.1
+threadpoolctl==3.6.0

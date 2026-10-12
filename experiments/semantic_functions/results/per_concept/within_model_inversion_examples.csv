@@ -1,0 +1,7 @@
+model,outcome,found,higher_scr_concept,higher_scr,higher_scr_outcome,lower_scr_concept,lower_scr,lower_scr_outcome,outcome_inversion_gap
+Qwen2.5-1.5B,additive_accuracy,True,country_capital,0.6333,0.042,present_past,0.3705,0.948,0.9059999999999999
+Qwen2.5-1.5B,conceptor_accuracy,True,english_french,0.6084,0.292,present_past,0.3705,0.969,0.677
+Qwen2.5-7B,additive_accuracy,True,english_french,0.6791,0.219,present_past,0.5473,0.969,0.75
+Qwen2.5-7B,conceptor_accuracy,True,english_french,0.6791,0.302,present_past,0.5473,0.969,0.667
+Llama-3.1-8B,additive_accuracy,True,english_french,0.1289,0.25,present_past,0.053,1.0,0.75
+Llama-3.1-8B,conceptor_accuracy,True,english_french,0.1289,0.375,present_past,0.053,0.927,0.552

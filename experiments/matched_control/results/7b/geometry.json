@@ -1,0 +1,62 @@
+{
+  "hallucination": {
+    "layer": 9,
+    "aperture": 0.05,
+    "n_samples": 100,
+    "hidden_size": 3584,
+    "centered_energy_retention": 0.9590926170349121,
+    "mean_cosine_z_notz": 0.9998672604560852,
+    "min_cosine_z_notz": 0.9997023940086365,
+    "fixed_norm_match_scale": 1.021103408909481,
+    "trace": 0.4449346959590912,
+    "frobenius_sq": 0.009127520024776459,
+    "scr": 0.020514291440233454,
+    "gram_crosscheck_max_abs": 3.073364496231079e-08,
+    "gram_crosscheck_relative_l2": 1.5720348756076419e-06
+  },
+  "sycophancy": {
+    "layer": 9,
+    "aperture": 0.05,
+    "n_samples": 100,
+    "hidden_size": 3584,
+    "centered_energy_retention": 0.9756951928138733,
+    "mean_cosine_z_notz": 0.9999485611915588,
+    "min_cosine_z_notz": 0.9999030232429504,
+    "fixed_norm_match_scale": 1.0123785092098343,
+    "trace": 0.31870269775390625,
+    "frobenius_sq": 0.0038785163778811693,
+    "scr": 0.012169700492702,
+    "gram_crosscheck_max_abs": 2.421438694000244e-08,
+    "gram_crosscheck_relative_l2": 1.6354811123164836e-06
+  },
+  "apathetic": {
+    "layer": 9,
+    "aperture": 0.05,
+    "n_samples": 100,
+    "hidden_size": 3584,
+    "centered_energy_retention": 0.9665320515632629,
+    "mean_cosine_z_notz": 0.9998810291290283,
+    "min_cosine_z_notz": 0.9997854828834534,
+    "fixed_norm_match_scale": 1.0171660816473698,
+    "trace": 0.3948586881160736,
+    "frobenius_sq": 0.006611915305256844,
+    "scr": 0.01674501664583657,
+    "gram_crosscheck_max_abs": 2.0489096641540527e-08,
+    "gram_crosscheck_relative_l2": 1.0405299235571874e-06
+  },
+  "optimistic": {
+    "layer": 9,
+    "aperture": 0.05,
+    "n_samples": 100,
+    "hidden_size": 3584,
+    "centered_energy_retention": 0.9439309239387512,
+    "mean_cosine_z_notz": 0.999428391456604,
+    "min_cosine_z_notz": 0.9990862607955933,
+    "fixed_norm_match_scale": 1.0292713705251517,
+    "trace": 0.3608965277671814,
+    "frobenius_sq": 0.01004447229206562,
+    "scr": 0.02783200036367606,
+    "gram_crosscheck_max_abs": 4.6566128730773926e-08,
+    "gram_crosscheck_relative_l2": 1.3863725598639576e-06
+  }
+}

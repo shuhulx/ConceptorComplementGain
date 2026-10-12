@@ -1,0 +1,67 @@
+{
+  "beta": 2.0,
+  "apertures": [
+    0.025,
+    0.05,
+    0.1,
+    0.2,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "spectral_rows": 147,
+  "correction_rows": 84,
+  "fold_rows": 420,
+  "sources": [
+    {
+      "model": "1.5b",
+      "generation_layer": 9,
+      "hook_name": "blocks.9.hook_resid_pre"
+    },
+    {
+      "model": "7b",
+      "generation_layer": 9,
+      "hook_name": "blocks.9.hook_resid_pre"
+    },
+    {
+      "model": "8b",
+      "generation_layer": 10,
+      "hook_name": "blocks.10.hook_resid_pre"
+    }
+  ],
+  "question_fold_seed": 42,
+  "heldout_question_indices_by_fold": [
+    [
+      0,
+      1,
+      15,
+      17
+    ],
+    [
+      3,
+      5,
+      8,
+      11
+    ],
+    [
+      2,
+      13,
+      16,
+      18
+    ],
+    [
+      4,
+      9,
+      12,
+      19
+    ],
+    [
+      6,
+      7,
+      10,
+      14
+    ]
+  ],
+  "scope": "Geometric analysis of original extraction states; no additional generations, judge scores, or autoregressive trajectory measurements.",
+  "row_provenance_limit": "Question folds reproduce the historical template-major row-index convention; tensor checkpoints have no semantic question IDs."
+}

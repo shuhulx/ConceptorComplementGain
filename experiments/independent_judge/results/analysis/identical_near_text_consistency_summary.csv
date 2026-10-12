@@ -1,0 +1,3 @@
+pair_type,n_pairs,deepseek_trait_abs_difference_mean,deepseek_trait_abs_difference_max,gemini_trait_abs_difference_mean,gemini_trait_abs_difference_max,deepseek_coherence_abs_difference_mean,deepseek_coherence_abs_difference_max,gemini_coherence_abs_difference_mean,gemini_coherence_abs_difference_max,deepseek_full_refusal_disagreement_mean,deepseek_full_refusal_disagreement_max,deepseek_any_refusal_disagreement_mean,deepseek_any_refusal_disagreement_max,gemini_full_refusal_disagreement_mean,gemini_full_refusal_disagreement_max
+exact,59,0.660377358490566,20.0,0.0,0.0,0.0847457627118644,5.0,0.1694915254237288,5.0,0.0,0.0,0.0,0.0,0.0,0.0
+near_ge_0.95,3,8.333333333333334,15.0,3.3333333333333335,10.0,5.0,5.0,1.6666666666666667,5.0,0.0,0.0,0.0,0.0,0.0,0.0

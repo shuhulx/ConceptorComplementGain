@@ -1,0 +1,8 @@
+numpy==2.3.5
+scipy==1.17.0
+scikit-learn==1.8.0
+pandas==2.2.3
+threadpoolctl==3.6.0
+# PyTorch loads tensor dictionaries; install the CPU build for these checks.
+torch==2.13.0
+pytest==9.0.3

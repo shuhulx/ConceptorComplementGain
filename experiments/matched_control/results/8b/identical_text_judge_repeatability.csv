@@ -1,0 +1,9 @@
+model_key,trait,condition,endpoint,n_identical_text_pairs,mean_signed_full_minus_prefix,mean_absolute_difference,median_absolute_difference,p90_absolute_difference,max_absolute_difference,exact_score_match_rate,scope_note
+8b,hallucination,baseline,trait,20,0.0,0.0,0.0,0.0,0.0,1.0,"The full and prefix prompts contain identical text. Any score difference estimates within-run automated-judge repeatability, not truncation."
+8b,hallucination,baseline,coherence,24,0.0,0.0,0.0,0.0,0.0,1.0,"The full and prefix prompts contain identical text. Any score difference estimates within-run automated-judge repeatability, not truncation."
+8b,hallucination,not_b1,trait,20,0.0,0.0,0.0,0.0,0.0,1.0,"The full and prefix prompts contain identical text. Any score difference estimates within-run automated-judge repeatability, not truncation."
+8b,hallucination,not_b1,coherence,24,0.0,0.0,0.0,0.0,0.0,1.0,"The full and prefix prompts contain identical text. Any score difference estimates within-run automated-judge repeatability, not truncation."
+8b,hallucination,not_b2,trait,14,0.0,0.0,0.0,0.0,0.0,1.0,"The full and prefix prompts contain identical text. Any score difference estimates within-run automated-judge repeatability, not truncation."
+8b,hallucination,not_b2,coherence,14,0.0,0.0,0.0,0.0,0.0,1.0,"The full and prefix prompts contain identical text. Any score difference estimates within-run automated-judge repeatability, not truncation."
+8b,hallucination,identity_b2,trait,13,0.0,0.0,0.0,0.0,0.0,1.0,"The full and prefix prompts contain identical text. Any score difference estimates within-run automated-judge repeatability, not truncation."
+8b,hallucination,identity_b2,coherence,13,0.0,0.0,0.0,0.0,0.0,1.0,"The full and prefix prompts contain identical text. Any score difference estimates within-run automated-judge repeatability, not truncation."

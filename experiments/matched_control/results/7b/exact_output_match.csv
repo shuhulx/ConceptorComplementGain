@@ -1,0 +1,5 @@
+model_key,trait,n_pairs,prefix200_token_exact_rate,full_token_exact_rate,either_1024_cap_hit_rate,scope_note
+7b,apathetic,40,0.075,0.025,0.0,Exact matching is judge-independent but bounded by 1024 tokens when either response hits the cap.
+7b,hallucination,40,0.375,0.225,0.0,Exact matching is judge-independent but bounded by 1024 tokens when either response hits the cap.
+7b,optimistic,40,0.175,0.0,0.0,Exact matching is judge-independent but bounded by 1024 tokens when either response hits the cap.
+7b,sycophancy,40,0.375,0.05,0.0,Exact matching is judge-independent but bounded by 1024 tokens when either response hits the cap.

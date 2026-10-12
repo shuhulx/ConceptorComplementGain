@@ -1,0 +1,512 @@
+{
+  "Qwen2.5-7B": {
+    "model": "Qwen2.5-7B",
+    "num_layers": 28,
+    "analysis_layers": [
+      26
+    ],
+    "control_A_semantic_as_chat": {
+      "antonym": {
+        "scr": 0.46622803744517133,
+        "ccr": 0.005070459097623825,
+        "spr": 0.0023639901940311703,
+        "layer": 26,
+        "n_samples": 100
+      },
+      "country_capital": {
+        "scr": 0.5719987676659942,
+        "ccr": 0.005220211510147367,
+        "spr": 0.002985954550760133,
+        "layer": 26,
+        "n_samples": 100
+      },
+      "present_past": {
+        "scr": 0.40493049760205413,
+        "ccr": 0.0039040307913507733,
+        "spr": 0.0015808611309954099,
+        "layer": 26,
+        "n_samples": 100
+      },
+      "english_french": {
+        "scr": 0.5416506322026144,
+        "ccr": 0.00624249130487442,
+        "spr": 0.0033812493618045536,
+        "layer": 26,
+        "n_samples": 100
+      },
+      "singular_plural": {
+        "scr": 0.5056008531468859,
+        "ccr": 0.0045486752476011005,
+        "spr": 0.0022998140858752386,
+        "layer": 26,
+        "n_samples": 100
+      },
+      "capitalize": {
+        "scr": 0.43223746870726604,
+        "ccr": 0.004872402974537441,
+        "spr": 0.002106035128235817,
+        "layer": 26,
+        "n_samples": 100
+      }
+    },
+    "control_B_persona_as_prompt_final": {
+      "sycophancy": {
+        "scr": 0.427333711058565,
+        "ccr": 0.0026656751121793476,
+        "spr": 0.001139132838164057,
+        "layer": 26,
+        "n_samples": 100
+      },
+      "hallucination": {
+        "scr": 0.5133642947150104,
+        "ccr": 0.0046515922461237225,
+        "spr": 0.002387961372733116,
+        "layer": 26,
+        "n_samples": 100
+      },
+      "evil": {
+        "scr": 0.5026381718341152,
+        "ccr": 0.004316554803933416,
+        "spr": 0.00216966521527086,
+        "layer": 26,
+        "n_samples": 100
+      },
+      "impolite": {
+        "scr": 0.5188002520922878,
+        "ccr": 0.005710020661354065,
+        "spr": 0.0029623601585626602,
+        "layer": 26,
+        "n_samples": 100
+      },
+      "optimistic": {
+        "scr": 0.5576641473802971,
+        "ccr": 0.0032537925456251416,
+        "spr": 0.0018145234457084111,
+        "layer": 26,
+        "n_samples": 100
+      },
+      "apathetic": {
+        "scr": 0.5141447783953513,
+        "ccr": 0.0047184739794049945,
+        "spr": 0.0024259787585054126,
+        "layer": 26,
+        "n_samples": 100
+      },
+      "humorous": {
+        "scr": 0.5000941940477359,
+        "ccr": 0.0035933186965329306,
+        "spr": 0.001796997817499297,
+        "layer": 26,
+        "n_samples": 100
+      }
+    },
+    "summary": {
+      "semantic_scr_mean_swapped": 0.4871077094616643,
+      "persona_scr_mean_swapped": 0.5048627927890518,
+      "mann_whitney_U": "18/42",
+      "mann_whitney_p": 0.6858974358974359,
+      "hedges_g": -0.31678023443163084,
+      "perfect_separation": false,
+      "semantic_scrs": [
+        0.46622803744517133,
+        0.5719987676659942,
+        0.40493049760205413,
+        0.5416506322026144,
+        0.5056008531468859,
+        0.43223746870726604
+      ],
+      "persona_scrs": [
+        0.427333711058565,
+        0.5133642947150104,
+        0.5026381718341152,
+        0.5188002520922878,
+        0.5576641473802971,
+        0.5141447783953513,
+        0.5000941940477359
+      ],
+      "protocol_matched": {
+        "prompt_final": {
+          "semantic_mean": 0.618755449851354,
+          "persona_mean": 0.5048627927890518,
+          "mann_whitney_U": 41.0,
+          "mann_whitney_U_max": 42,
+          "mann_whitney_p": 0.0011655011655011655,
+          "perfect_separation": false
+        },
+        "chat_generation": {
+          "semantic_mean": 0.4871077094616643,
+          "persona_mean": 0.3382091905389513,
+          "mann_whitney_U": 42.0,
+          "mann_whitney_U_max": 42,
+          "mann_whitney_p": 0.0005827505827505828,
+          "perfect_separation": true
+        },
+        "semantic_protocol_shift": {
+          "original_mean": 0.618755449851354,
+          "swapped_mean": 0.4871077094616643,
+          "delta_mean": -0.13164774038968963
+        },
+        "persona_protocol_shift": {
+          "original_mean": 0.3382091905389513,
+          "swapped_mean": 0.5048627927890518,
+          "delta_mean": 0.16665360225010048
+        }
+      }
+    },
+    "original_scr": {
+      "antonym": 0.5942184329032898,
+      "country_capital": 0.7155436873435974,
+      "present_past": 0.5473217964172363,
+      "english_french": 0.6790971755981445,
+      "singular_plural": 0.6107984781265259,
+      "capitalize": 0.5655531287193298,
+      "sycophancy": 0.3443903923034668,
+      "hallucination": 0.3898613452911377,
+      "evil": 0.28888946771621704,
+      "impolite": 0.37890005111694336,
+      "optimistic": 0.3306124210357666,
+      "apathetic": 0.36071649193763733,
+      "humorous": 0.2740941643714905
+    }
+  },
+  "Llama-3.1-8B": {
+    "model": "Llama-3.1-8B",
+    "num_layers": 32,
+    "analysis_layers": [
+      30
+    ],
+    "control_A_semantic_as_chat": {
+      "antonym": {
+        "scr": 0.022874411054694264,
+        "ccr": 0.0001552399917272851,
+        "spr": 3.551023382897256e-06,
+        "layer": 30,
+        "n_samples": 100
+      },
+      "country_capital": {
+        "scr": 0.024155286133410375,
+        "ccr": 0.00013952390872873366,
+        "spr": 3.370239937794395e-06,
+        "layer": 30,
+        "n_samples": 100
+      },
+      "present_past": {
+        "scr": 0.021889706387879772,
+        "ccr": 0.00011620087025221437,
+        "spr": 2.5436029318370856e-06,
+        "layer": 30,
+        "n_samples": 100
+      },
+      "english_french": {
+        "scr": 0.02832746228335976,
+        "ccr": 0.0001764982007443905,
+        "spr": 4.999746124667581e-06,
+        "layer": 30,
+        "n_samples": 100
+      },
+      "singular_plural": {
+        "scr": 0.022354553548687508,
+        "ccr": 0.0001330069499090314,
+        "spr": 2.9733109840890393e-06,
+        "layer": 30,
+        "n_samples": 100
+      },
+      "capitalize": {
+        "scr": 0.019534631235550392,
+        "ccr": 9.226115071214736e-05,
+        "spr": 1.8022875565293361e-06,
+        "layer": 30,
+        "n_samples": 100
+      }
+    },
+    "control_B_persona_as_prompt_final": {
+      "sycophancy": {
+        "scr": 0.06085292806095543,
+        "ccr": 0.00010990766168106347,
+        "spr": 6.6882030296255834e-06,
+        "layer": 30,
+        "n_samples": 100
+      },
+      "hallucination": {
+        "scr": 0.04825872844356101,
+        "ccr": 0.00018724593974184245,
+        "spr": 9.036250958160963e-06,
+        "layer": 30,
+        "n_samples": 100
+      },
+      "evil": {
+        "scr": 0.043891554415299114,
+        "ccr": 0.00011305684893159196,
+        "spr": 4.96224083690322e-06,
+        "layer": 30,
+        "n_samples": 100
+      },
+      "impolite": {
+        "scr": 0.09507454960463996,
+        "ccr": 0.000246060430072248,
+        "spr": 2.339408456464298e-05,
+        "layer": 30,
+        "n_samples": 100
+      },
+      "optimistic": {
+        "scr": 0.07963715314654478,
+        "ccr": 0.00019100221106782556,
+        "spr": 1.5210872334137093e-05,
+        "layer": 30,
+        "n_samples": 100
+      },
+      "apathetic": {
+        "scr": 0.070263025980515,
+        "ccr": 0.00020214942924212664,
+        "spr": 1.4203630598785821e-05,
+        "layer": 30,
+        "n_samples": 100
+      },
+      "humorous": {
+        "scr": 0.052038335512717304,
+        "ccr": 0.00021367760200519115,
+        "spr": 1.1119426744699012e-05,
+        "layer": 30,
+        "n_samples": 100
+      }
+    },
+    "summary": {
+      "semantic_scr_mean_swapped": 0.02318934177393035,
+      "persona_scr_mean_swapped": 0.06428803930917608,
+      "mann_whitney_U": "0/42",
+      "mann_whitney_p": 1.0,
+      "hedges_g": -2.76890020414949,
+      "perfect_separation": false,
+      "semantic_scrs": [
+        0.022874411054694264,
+        0.024155286133410375,
+        0.021889706387879772,
+        0.02832746228335976,
+        0.022354553548687508,
+        0.019534631235550392
+      ],
+      "persona_scrs": [
+        0.06085292806095543,
+        0.04825872844356101,
+        0.043891554415299114,
+        0.09507454960463996,
+        0.07963715314654478,
+        0.070263025980515,
+        0.052038335512717304
+      ],
+      "protocol_matched": {
+        "prompt_final": {
+          "semantic_mean": 0.08420243424673875,
+          "persona_mean": 0.06428803930917608,
+          "mann_whitney_U": 31.0,
+          "mann_whitney_U_max": 42,
+          "mann_whitney_p": 0.09032634032634032,
+          "perfect_separation": false
+        },
+        "chat_generation": {
+          "semantic_mean": 0.02318934177393035,
+          "persona_mean": 0.017058174524988447,
+          "mann_whitney_U": 40.0,
+          "mann_whitney_U_max": 42,
+          "mann_whitney_p": 0.002331002331002331,
+          "perfect_separation": false
+        },
+        "semantic_protocol_shift": {
+          "original_mean": 0.08420243424673875,
+          "swapped_mean": 0.02318934177393035,
+          "delta_mean": -0.0610130924728084
+        },
+        "persona_protocol_shift": {
+          "original_mean": 0.017058174524988447,
+          "swapped_mean": 0.06428803930917608,
+          "delta_mean": 0.047229864784187635
+        }
+      }
+    },
+    "original_scr": {
+      "antonym": 0.0947553962469101,
+      "country_capital": 0.07028907537460327,
+      "present_past": 0.05300355330109596,
+      "english_french": 0.12891077995300293,
+      "singular_plural": 0.09018128365278244,
+      "capitalize": 0.06807451695203781,
+      "sycophancy": 0.01526596024632454,
+      "hallucination": 0.01832587644457817,
+      "evil": 0.01501860935240984,
+      "impolite": 0.020601540803909302,
+      "optimistic": 0.020438818261027336,
+      "apathetic": 0.019198130816221237,
+      "humorous": 0.010558285750448704
+    }
+  },
+  "Qwen2.5-1.5B": {
+    "model": "Qwen2.5-1.5B",
+    "num_layers": 28,
+    "analysis_layers": [
+      26
+    ],
+    "control_A_semantic_as_chat": {
+      "antonym": {
+        "scr": 0.20469100325734058,
+        "ccr": 0.005063650198280811,
+        "spr": 0.0010364836392303307,
+        "layer": 26,
+        "n_samples": 100
+      },
+      "country_capital": {
+        "scr": 0.3352326292869697,
+        "ccr": 0.008211207886536917,
+        "spr": 0.002752664809425672,
+        "layer": 26,
+        "n_samples": 100
+      },
+      "present_past": {
+        "scr": 0.2698460698351792,
+        "ccr": 0.004429742073019345,
+        "spr": 0.00119534848878781,
+        "layer": 26,
+        "n_samples": 100
+      },
+      "english_french": {
+        "scr": 0.2540227099975102,
+        "ccr": 0.006974927460153897,
+        "spr": 0.001771789975464344,
+        "layer": 26,
+        "n_samples": 100
+      },
+      "singular_plural": {
+        "scr": 0.274149765474081,
+        "ccr": 0.006262931972742081,
+        "spr": 0.001716981331507365,
+        "layer": 26,
+        "n_samples": 100
+      },
+      "capitalize": {
+        "scr": 0.22616145135976307,
+        "ccr": 0.005251588299870491,
+        "spr": 0.001187706831842661,
+        "layer": 26,
+        "n_samples": 100
+      }
+    },
+    "control_B_persona_as_prompt_final": {
+      "sycophancy": {
+        "scr": 0.32463904257512227,
+        "ccr": 0.002254337382813295,
+        "spr": 0.0007318459295978149,
+        "layer": 26,
+        "n_samples": 100
+      },
+      "hallucination": {
+        "scr": 0.26711773874277267,
+        "ccr": 0.0031718751415610313,
+        "spr": 0.0008472641153881947,
+        "layer": 26,
+        "n_samples": 100
+      },
+      "evil": {
+        "scr": 0.2722625199959082,
+        "ccr": 0.0025309988607962928,
+        "spr": 0.0006890961279471716,
+        "layer": 26,
+        "n_samples": 100
+      },
+      "impolite": {
+        "scr": 0.3574909720353616,
+        "ccr": 0.005574752887090047,
+        "spr": 0.0019929238284627595,
+        "layer": 26,
+        "n_samples": 100
+      },
+      "optimistic": {
+        "scr": 0.33019539118561236,
+        "ccr": 0.003014017827808857,
+        "spr": 0.0009952147956937551,
+        "layer": 26,
+        "n_samples": 100
+      },
+      "apathetic": {
+        "scr": 0.3306107311532865,
+        "ccr": 0.004128413895765941,
+        "spr": 0.0013648979365825653,
+        "layer": 26,
+        "n_samples": 100
+      },
+      "humorous": {
+        "scr": 0.2888816657581237,
+        "ccr": 0.0034636066605647406,
+        "spr": 0.0010005724616348743,
+        "layer": 26,
+        "n_samples": 100
+      }
+    },
+    "summary": {
+      "semantic_scr_mean_swapped": 0.2606839382018073,
+      "persona_scr_mean_swapped": 0.3101711516351696,
+      "mann_whitney_U": "9/42",
+      "mann_whitney_p": 0.9632867132867132,
+      "hedges_g": -1.1639914155494042,
+      "perfect_separation": false,
+      "semantic_scrs": [
+        0.20469100325734058,
+        0.3352326292869697,
+        0.2698460698351792,
+        0.2540227099975102,
+        0.274149765474081,
+        0.22616145135976307
+      ],
+      "persona_scrs": [
+        0.32463904257512227,
+        0.26711773874277267,
+        0.2722625199959082,
+        0.3574909720353616,
+        0.33019539118561236,
+        0.3306107311532865,
+        0.2888816657581237
+      ],
+      "protocol_matched": {
+        "prompt_final": {
+          "semantic_mean": 0.5076376497745514,
+          "persona_mean": 0.3101711516351696,
+          "mann_whitney_U": 42.0,
+          "mann_whitney_U_max": 42,
+          "mann_whitney_p": 0.0005827505827505828,
+          "perfect_separation": true
+        },
+        "chat_generation": {
+          "semantic_mean": 0.2606839382018073,
+          "persona_mean": 0.2268747580902917,
+          "mann_whitney_U": 28.0,
+          "mann_whitney_U_max": 42,
+          "mann_whitney_p": 0.18298368298368298,
+          "perfect_separation": false
+        },
+        "semantic_protocol_shift": {
+          "original_mean": 0.5076376497745514,
+          "swapped_mean": 0.2606839382018073,
+          "delta_mean": -0.24695371157274412
+        },
+        "persona_protocol_shift": {
+          "original_mean": 0.2268747580902917,
+          "swapped_mean": 0.3101711516351696,
+          "delta_mean": 0.08329639354487792
+        }
+      }
+    },
+    "original_scr": {
+      "antonym": 0.4894618093967438,
+      "country_capital": 0.6332793831825256,
+      "present_past": 0.3705369234085083,
+      "english_french": 0.6083683967590332,
+      "singular_plural": 0.533142626285553,
+      "capitalize": 0.41103675961494446,
+      "sycophancy": 0.20635610818862915,
+      "hallucination": 0.26278549432754517,
+      "evil": 0.25515198707580566,
+      "impolite": 0.28060203790664673,
+      "optimistic": 0.20937959849834442,
+      "apathetic": 0.2081102877855301,
+      "humorous": 0.1657377928495407
+    }
+  }
+}

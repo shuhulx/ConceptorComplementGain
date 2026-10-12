@@ -1,0 +1,7 @@
+# Optional own-model examples; install after the root CPU requirements.
+transformer-lens==3.5.1
+transformers==5.13.1
+tokenizers==0.22.2
+accelerate==1.14.0
+huggingface-hub==1.23.0
+datasets==4.3.0

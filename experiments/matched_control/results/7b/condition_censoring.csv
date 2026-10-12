@@ -1,0 +1,17 @@
+model_key,trait,condition,n,cap_hit_rate_1024,eos_rate,mean_generated_tokens,median_generated_tokens,full_terminal_punctuation_rate,prefix_terminal_punctuation_rate,text_changed_after_prefix200_rate,prefix200_has_additional_tokens_rate
+7b,apathetic,baseline,40,0.0,1.0,544.75,535.0,1.0,0.1,1.0,1.0
+7b,apathetic,identity_b2,40,0.0,1.0,477.225,463.0,1.0,0.05,1.0,1.0
+7b,apathetic,not_b1,40,0.0,1.0,531.775,521.5,1.0,0.075,1.0,1.0
+7b,apathetic,not_b2,40,0.0,1.0,491.05,476.5,1.0,0.075,1.0,1.0
+7b,hallucination,baseline,40,0.0,1.0,393.85,345.0,0.975,0.2,0.8,0.8
+7b,hallucination,identity_b2,40,0.0,1.0,331.5,345.5,1.0,0.225,0.775,0.775
+7b,hallucination,not_b1,40,0.025,0.975,409.725,399.0,0.975,0.3,0.75,0.75
+7b,hallucination,not_b2,40,0.0,1.0,323.525,318.0,1.0,0.225,0.8,0.8
+7b,optimistic,baseline,40,0.0,1.0,536.875,546.0,1.0,0.075,1.0,1.0
+7b,optimistic,identity_b2,40,0.0,1.0,426.65,446.0,1.0,0.15,0.95,0.975
+7b,optimistic,not_b1,40,0.0,1.0,544.55,536.5,1.0,0.025,1.0,1.0
+7b,optimistic,not_b2,40,0.0,1.0,427.975,442.5,1.0,0.15,0.925,0.95
+7b,sycophancy,baseline,40,0.0,1.0,477.65,490.5,1.0,0.125,0.975,0.975
+7b,sycophancy,identity_b2,40,0.0,1.0,413.65,425.0,1.0,0.15,1.0,1.0
+7b,sycophancy,not_b1,40,0.0,1.0,470.725,479.0,1.0,0.05,1.0,1.0
+7b,sycophancy,not_b2,40,0.0,1.0,404.25,412.0,1.0,0.05,1.0,1.0

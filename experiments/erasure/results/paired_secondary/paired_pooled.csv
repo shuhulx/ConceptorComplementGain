@@ -1,0 +1,7 @@
+contrast,metric,delta_definition,expected_erasure_direction,n_model_trait_cells,n_question_clusters,point_estimate,ci95_low,ci95_high,cells_with_expected_sign,cells_total,n_bootstrap
+inlp20_vs_random_r20,log_loss,treatment_minus_mean_matched_random,positive,21,420,0.38025333646732457,0.35904433343037306,0.4025552671845453,20,21,10000
+inlp20_vs_random_r20,balanced_accuracy,treatment_minus_mean_matched_random,negative,21,420,-0.22198412698412695,-0.23761904761904762,-0.20650793650793647,21,21,10000
+inlp20_vs_random_r20,roc_auc,treatment_minus_mean_matched_random,negative,21,420,-0.12076190476190478,-0.13873015873015873,-0.10330158730158734,21,21,10000
+leace_vs_random_r1,log_loss,treatment_minus_mean_matched_random,positive,21,420,0.4091447271663481,0.38242720280172104,0.43750085988652365,20,21,10000
+leace_vs_random_r1,balanced_accuracy,treatment_minus_mean_matched_random,negative,21,420,-0.23055555555555557,-0.24706547619047625,-0.2142063492063492,21,21,10000
+leace_vs_random_r1,roc_auc,treatment_minus_mean_matched_random,negative,21,420,-0.15320634920634923,-0.17450793650793653,-0.13298333333333334,21,21,10000

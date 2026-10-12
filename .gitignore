@@ -1,0 +1,86 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+credentials*.json
+secrets*.json
+
+# Local agent and editor configuration
+.claude/
+.omc/
+.cursor/
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*.ipynb
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv*/
+venv/
+
+# Generated experiment inputs and outputs
+experiments/broad_study/function_vectors.json
+experiments/broad_study/runs/
+experiments/**/runs/
+runs/
+outputs/
+checkpoints*/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.npy
+*.npz
+*.pkl
+*.pickle
+
+# Raw response, judgment, and provider logs: never add to Git
+*.jsonl
+*.log
+
+# Private working files
+plans/
+CLAUDE.md
+AGENTS.md
+GUIDE_*
+*HANDOFF*
+IMPLEMENTATION_PROGRESS*
+CLAUDE_TASK*
+CLAUDE_IMPLEMENTATION_REPORT*
+RELEASE_PREPARATION_STATUS*
+REPRODUCIBILITY_MAP*
+
+# Private preservation material and archives: never add to Git
+private_archive/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# Paper and rendered assets are not part of this code release
+*.pdf
+*.png
+*.svg
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+*.toc
+
+# Operating-system/editor files
+.DS_Store
+Thumbs.db
+*~
+*.swp

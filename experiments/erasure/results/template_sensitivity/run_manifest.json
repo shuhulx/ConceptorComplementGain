@@ -1,0 +1,542 @@
+{
+  "counts": {
+    "aggregate_rows": 315,
+    "fold_rows": 1575,
+    "key_findings": {
+      "method_summary": {},
+      "mode": "template",
+      "primary_split": "question_grouped"
+    },
+    "paired_contrast_rows": 294,
+    "prediction_rows": 63000,
+    "validation_rows": 2940
+  },
+  "fold_validation": {
+    "question_grouped": [
+      {
+        "eraser_fit_n": 120,
+        "eraser_groups": [
+          2,
+          4,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          14,
+          16,
+          18,
+          19
+        ],
+        "fold": 0,
+        "probe_fit_n": 40,
+        "probe_groups": [
+          3,
+          5,
+          8,
+          11
+        ],
+        "probe_inner_question_groups": [
+          3,
+          5,
+          8,
+          11
+        ],
+        "test_groups": [
+          0,
+          1,
+          15,
+          17
+        ],
+        "test_n": 40
+      },
+      {
+        "eraser_fit_n": 120,
+        "eraser_groups": [
+          0,
+          1,
+          4,
+          6,
+          7,
+          9,
+          10,
+          12,
+          14,
+          15,
+          17,
+          19
+        ],
+        "fold": 1,
+        "probe_fit_n": 40,
+        "probe_groups": [
+          2,
+          13,
+          16,
+          18
+        ],
+        "probe_inner_question_groups": [
+          2,
+          13,
+          16,
+          18
+        ],
+        "test_groups": [
+          3,
+          5,
+          8,
+          11
+        ],
+        "test_n": 40
+      },
+      {
+        "eraser_fit_n": 120,
+        "eraser_groups": [
+          0,
+          1,
+          3,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          14,
+          15,
+          17
+        ],
+        "fold": 2,
+        "probe_fit_n": 40,
+        "probe_groups": [
+          4,
+          9,
+          12,
+          19
+        ],
+        "probe_inner_question_groups": [
+          4,
+          9,
+          12,
+          19
+        ],
+        "test_groups": [
+          2,
+          13,
+          16,
+          18
+        ],
+        "test_n": 40
+      },
+      {
+        "eraser_fit_n": 120,
+        "eraser_groups": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          8,
+          11,
+          13,
+          15,
+          16,
+          17,
+          18
+        ],
+        "fold": 3,
+        "probe_fit_n": 40,
+        "probe_groups": [
+          6,
+          7,
+          10,
+          14
+        ],
+        "probe_inner_question_groups": [
+          6,
+          7,
+          10,
+          14
+        ],
+        "test_groups": [
+          4,
+          9,
+          12,
+          19
+        ],
+        "test_n": 40
+      },
+      {
+        "eraser_fit_n": 120,
+        "eraser_groups": [
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          11,
+          12,
+          13,
+          16,
+          18,
+          19
+        ],
+        "fold": 4,
+        "probe_fit_n": 40,
+        "probe_groups": [
+          0,
+          1,
+          15,
+          17
+        ],
+        "probe_inner_question_groups": [
+          0,
+          1,
+          15,
+          17
+        ],
+        "test_groups": [
+          6,
+          7,
+          10,
+          14
+        ],
+        "test_n": 40
+      }
+    ],
+    "template_grouped": [
+      {
+        "eraser_fit_n": 120,
+        "eraser_groups": [
+          2,
+          3,
+          4
+        ],
+        "fold": 0,
+        "probe_fit_n": 40,
+        "probe_groups": [
+          1
+        ],
+        "probe_inner_question_groups": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "test_groups": [
+          0
+        ],
+        "test_n": 40
+      },
+      {
+        "eraser_fit_n": 120,
+        "eraser_groups": [
+          0,
+          3,
+          4
+        ],
+        "fold": 1,
+        "probe_fit_n": 40,
+        "probe_groups": [
+          2
+        ],
+        "probe_inner_question_groups": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "test_groups": [
+          1
+        ],
+        "test_n": 40
+      },
+      {
+        "eraser_fit_n": 120,
+        "eraser_groups": [
+          0,
+          1,
+          4
+        ],
+        "fold": 2,
+        "probe_fit_n": 40,
+        "probe_groups": [
+          3
+        ],
+        "probe_inner_question_groups": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "test_groups": [
+          2
+        ],
+        "test_n": 40
+      },
+      {
+        "eraser_fit_n": 120,
+        "eraser_groups": [
+          0,
+          1,
+          2
+        ],
+        "fold": 3,
+        "probe_fit_n": 40,
+        "probe_groups": [
+          4
+        ],
+        "probe_inner_question_groups": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "test_groups": [
+          3
+        ],
+        "test_n": 40
+      },
+      {
+        "eraser_fit_n": 120,
+        "eraser_groups": [
+          1,
+          2,
+          3
+        ],
+        "fold": 4,
+        "probe_fit_n": 40,
+        "probe_groups": [
+          0
+        ],
+        "probe_inner_question_groups": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "test_groups": [
+          4
+        ],
+        "test_n": 40
+      }
+    ]
+  },
+  "run_spec": {
+    "aperture": 0.05,
+    "bootstrap_draws": 10000,
+    "fold_definition": {
+      "probe_inner_cv": "question_id",
+      "question_folds": [
+        [
+          0,
+          1,
+          15,
+          17
+        ],
+        [
+          3,
+          5,
+          8,
+          11
+        ],
+        [
+          2,
+          13,
+          16,
+          18
+        ],
+        [
+          4,
+          9,
+          12,
+          19
+        ],
+        [
+          6,
+          7,
+          10,
+          14
+        ]
+      ],
+      "role_sizes": {
+        "eraser_fit": 120,
+        "probe_fit": 40,
+        "test": 40
+      },
+      "sample_mapping": "row=template_id*20+question_id",
+      "template_folds": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "three_way_cycle": "test=f; probe=(f+1) mod 5; eraser=remaining 3 groups"
+    },
+    "folds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "inlp_dual": false,
+    "inlp_ranks": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      20
+    ],
+    "inlp_solver": "LinearSVC-primal",
+    "layers": {
+      "1.5b": 9,
+      "7b": 9,
+      "8b": 10
+    },
+    "mode": "template",
+    "models": [
+      "1.5b",
+      "7b",
+      "8b"
+    ],
+    "probe_c_grid": [
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "random_ranks": [
+      1,
+      20
+    ],
+    "random_replicates": 3,
+    "row_space_svd_driver": "scipy-gesvd",
+    "software": {
+      "numpy": "2.3.5",
+      "platform": "Linux-6.6.122+-x86_64-with-glibc2.35",
+      "python": "3.12.13",
+      "scipy": "1.17.0",
+      "sklearn": "1.8.0",
+      "torch": "2.11.0+cpu"
+    },
+    "split_schemes": [
+      "template_grouped"
+    ],
+    "traits": [
+      "sycophancy",
+      "hallucination",
+      "evil",
+      "impolite",
+      "optimistic",
+      "apathetic",
+      "humorous"
+    ]
+  },
+  "synthetic_verification": {
+    "eraser_fit_rows": 2000,
+    "inlp_r4_balanced_accuracy": 0.515,
+    "leace_balanced_accuracy": 0.5075,
+    "leace_eraser_crosscov_ratio": 9.446660481331841e-17,
+    "leace_eraser_mean_gap_ratio": 9.752275837332543e-17,
+    "leace_idempotence": 7.938583419531833e-17,
+    "probe_fit_rows": 800,
+    "random_rowspace_r1_balanced_accuracy": 0.9975,
+    "raw_balanced_accuracy": 0.9975,
+    "test_rows": 800
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "schema_version": "historical-environment-1",
+  "applies_to": {
+    "study": "matched 1,024-token panel",
+    "models": [
+      "1.5b",
+      "7b",
+      "8b"
+    ],
+    "targets": [
+      "hallucination",
+      "sycophancy",
+      "apathetic",
+      "optimistic"
+    ],
+    "conditions": [
+      "baseline",
+      "not_b1",
+      "not_b2",
+      "identity_b2"
+    ],
+    "n_per_model_target_condition": 40,
+    "responses_per_model": 640,
+    "not_applicable_to": [
+      "broad seven-target study",
+      "protocol swap",
+      "activation extraction",
+      "finite alternatives (purification, Fisher, GEVD)"
+    ]
+  },
+  "models": {
+    "1.5b": {
+      "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+      "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "layer": 9,
+      "num_layers": 28,
+      "hidden_size": 1536
+    },
+    "7b": {
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "layer": 9,
+      "num_layers": 28,
+      "hidden_size": 3584
+    },
+    "8b": {
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+      "layer": 10,
+      "num_layers": 32,
+      "hidden_size": 4096
+    }
+  },
+  "generation_software": {
+    "python": "3.12.13",
+    "torch": "2.11.0+cu128",
+    "torch_cuda": "12.8",
+    "numpy": "2.0.2",
+    "scipy": "1.17.0",
+    "transformer_lens": "3.5.1",
+    "transformers": "5.13.1",
+    "accelerate": "1.14.0",
+    "tokenizers": "0.22.2",
+    "safetensors": "0.8.0",
+    "huggingface_hub": "1.23.0",
+    "dtype": "float16",
+    "deterministic_algorithms_enabled": false,
+    "cudnn_deterministic": false,
+    "cudnn_benchmark": false,
+    "cuda_matmul_allow_tf32": false,
+    "cudnn_allow_tf32": true
+  },
+  "hardware": {
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "gpu_count": 1,
+    "compute_capability": "8.0",
+    "nvidia_driver": "580.82.07",
+    "cudnn_version": 91900,
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.35"
+  },
+  "decoding": {
+    "max_new_tokens": 1024,
+    "temperature": 0.7,
+    "top_p": 0.95,
+    "do_sample": true,
+    "base_seed": 42,
+    "seed_rule": "base_seed + sample_index; reset before every matched condition",
+    "condition_order_seed": 8128
+  },
+  "hooks": {
+    "hook_point": "hook_resid_pre",
+    "layer_indexing": "zero-based",
+    "all_sequence_positions": true,
+    "aperture": 0.05
+  },
+  "historical_judge": {
+    "sdk": "google-genai",
+    "sdk_version": "2.11.0",
+    "model": "gemini-2.5-flash",
+    "temperature": 0.0,
+    "thinking_budget": 0,
+    "max_output_tokens": 100,
+    "seed": 2401,
+    "views": {
+      "prefix200": "first 200 generated tokens",
+      "full": "full response"
+    },
+    "blinded_view_order": true,
+    "backend_revision": "not exposed by the model alias"
+  },
+  "note": "This record describes generation and judging for the matched panel. Gemini supplied target-expression scores, historical-rubric coherence scores and refusal labels. The corrected coherence endpoint uses deepseek-v4-pro and the coherence-only rubric described in the corrected_coherence experiment."
+}
