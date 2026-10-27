@@ -1,8 +1,7 @@
 # When a Conceptor Complement Becomes Gain: Operator Geometry and Behavioral Attribution in Language Models
 
-[![Python 3.12](https://img.shields.io/badge/python-3.12-blue)](https://www.python.org/downloads/release/python-3120/)
+[![arXiv:2610.16325](https://img.shields.io/badge/arXiv-2610.16325-b31b1b.svg)](https://arxiv.org/abs/2610.16325)
 [![Code: Apache 2.0](https://img.shields.io/badge/code-Apache%202.0-blue)](LICENSE)
-[![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey)](LICENSE-DATA)
 
 **Shuhul Razdan and R Balamurugan** · NeurReps 2026, a NeurIPS workshop.
 
